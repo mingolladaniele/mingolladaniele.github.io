@@ -9,6 +9,8 @@
   "author": "Daniele Mingolla",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "package-lock": "^1.0.0",
+    "package-name": "^0.1.0"
   }
 }
