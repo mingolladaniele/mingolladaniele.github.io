@@ -105,7 +105,7 @@ body {
     background-size: cover; }
     body#bg-img:after {
       content: "";
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       width: 100%;
@@ -290,6 +290,8 @@ main {
   .projects {
     grid-template-columns: 1fr; } }
 
-@media only screen and (width: 320px) {
+@media only screen and (max-height: 570px) {
   main .lg-heading {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .menu-branding .portrait {
+    transform: scale(0.85); } }

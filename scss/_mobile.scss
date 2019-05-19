@@ -88,4 +88,11 @@ $portrait-small-image: url(../img/portrait1_small.jpg);
       font-size: 4rem;
     }
   }
+  .menu {
+    &-branding {
+      .portrait {
+        transform: scale(0.85);
+      }
+    }
+  }
 }

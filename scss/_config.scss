@@ -1,7 +1,7 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
-$home-image: url(dist/img/background.jpg);
+$home-image: url(../img/background.jpg);
 $background-opacity: 0.8;
 
 @mixin easeOut {
@@ -16,7 +16,7 @@ $background-opacity: 0.8;
       background-size: cover;
       &:after {
         content: "";
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 100%;
@@ -32,7 +32,7 @@ $background-opacity: 0.8;
 
 @mixin mediaXs {
   //iphone 5/SE
-  @media only screen and (width: 320px) {
+  @media only screen and (max-height: 570px) {
     @content;
   }
 }
