@@ -1,4 +1,3 @@
-# danielemingolla.github.io
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
