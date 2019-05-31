@@ -28,6 +28,20 @@ $background-opacity: 0.8;
   }
 }
 
+//fix lista interessi nei device
+@mixin li-adjust{
+  .bio{
+    p{
+      text-align:left;
+    }
+    li{
+      text-align: left;
+      &:nth-child(1){
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
 //Media Query Mixins
 
 @mixin mediaXs {

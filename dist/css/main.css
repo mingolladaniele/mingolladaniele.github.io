@@ -240,14 +240,32 @@ main {
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
+  .bio p {
+    text-align: left; }
+  .bio li {
+    text-align: left; }
+    .bio li:nth-child(1) {
+      padding-bottom: 10px; }
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  .bio p {
+    text-align: left; }
+  .bio li {
+    text-align: left; }
+    .bio li:nth-child(1) {
+      padding-bottom: 10px; }
   .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
+  .bio p {
+    text-align: left; }
+  .bio li {
+    text-align: left; }
+    .bio li:nth-child(1) {
+      padding-bottom: 10px; }
   main {
     align-items: center;
     text-align: center; }
@@ -280,6 +298,12 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  .bio p {
+    text-align: left; }
+  .bio li {
+    text-align: left; }
+    .bio li:nth-child(1) {
+      padding-bottom: 10px; }
   main {
     padding: 2rem; }
     main #home h1 {
@@ -291,6 +315,12 @@ main {
     grid-template-columns: 1fr; } }
 
 @media only screen and (max-height: 570px) {
+  .bio p {
+    text-align: left; }
+  .bio li {
+    text-align: left; }
+    .bio li:nth-child(1) {
+      padding-bottom: 10px; }
   main .lg-heading {
     font-size: 4rem; }
   .menu-branding .portrait {

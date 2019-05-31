@@ -1,6 +1,7 @@
 $portrait-small-image: url(../img/portrait1_small.jpg);
 // Widescreens
 @include mediaXl {
+  @include li-adjust;
   .projects {
     grid-template-columns: repeat(4, 1fr); // al massimo avrò 4 elementi
   }
@@ -8,6 +9,7 @@ $portrait-small-image: url(../img/portrait1_small.jpg);
 
 // Desktops & Laptops
 @include mediaLg {
+  @include li-adjust;
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -15,6 +17,7 @@ $portrait-small-image: url(../img/portrait1_small.jpg);
 
 // Tablets & Small Laptops
 @include mediaMd {
+  @include li-adjust;
   main {
     align-items: center;
     text-align: center;
@@ -64,6 +67,7 @@ $portrait-small-image: url(../img/portrait1_small.jpg);
 
 // Smartphones
 @include mediaSm {
+  @include li-adjust;
   main {
     padding: 2rem;
     #home h1 {
@@ -83,6 +87,7 @@ $portrait-small-image: url(../img/portrait1_small.jpg);
 
 // Iphone 5/SE
 @include mediaXs {
+  @include li-adjust;
   main {
     .lg-heading {
       font-size: 4rem;
