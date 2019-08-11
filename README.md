@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://danielemingolla.github.io/">
-    <img src="/dist/img/logogit.png" alt="Logo" width="600" height="100">
+    <img src="/assets/images/logogit.png" alt="Logo" width="600" height="100">
   </a>
 
   <h3 align="center">My Personal Portfolio</h3>
