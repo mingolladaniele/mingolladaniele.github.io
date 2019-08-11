@@ -1,62 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <title>
+      Daniele Mingolla
+    </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Daniele Mingolla Personal Website" />
+    <meta name="author" content="Daniele Mingolla" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- Google Fonts -->
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="dist/css/main.css" />
-    <title>Contact Me</title>
+
+    <!-- FontAwesome JS-->
+    <script src="https://kit.fontawesome.com/1695380756.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css" />
   </head>
+
   <body>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link"> Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link"> About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link"> My Work</a>
-          </li>
-          <li class="nav-item current">
-            <a href="contact.html" class="nav-link"> How To Reach Me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main id="contact">
-      <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">
-        This is how you can contact me...
-      </h2>
-      <div class="boxes">
-        <div>
-          <a href="mailto:danielemingolla98ta@gmail.com">
-            <span class="text-secondary">Email: </span>
-            danielemingolla98ta<wbr />@gmail.com</a
+    <header class="header text-center">
+      <div class="force-overflow">
+        <h1 class="blog-name pt-lg-4 mb-0">
+          <a href="index.html">Daniele Mingolla</a>
+        </h1>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navigation"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </div>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navigation" class="collapse navbar-collapse flex-column">
+            <div class="profile-section pt-3 pt-lg-0">
+              <img
+                class="profile-image mb-3 rounded-circle mx-auto"
+                src="assets/images/profile.png"
+                alt="image"
+              />
+
+              <div class="bio mb-3">
+                Hi, my name is Daniele Mingolla and I'm a developer and an ETF
+                investor. Welcome to my personal website!
+              </div>
+              <!--//bio-->
+              <ul class="social-list list-inline py-2 mx-auto">
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/daniele-mingolla/"
+                    ><i class="fab fa-linkedin-in fa-fw"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/daniele_mingolla/"
+                    ><i class="fab fa-instagram fa-fw"></i
+                  ></a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="https://github.com/danielemingolla"
+                    ><i class="fab fa-github-alt fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+              <!--//social-list-->
+              <hr />
+            </div>
+            <!--//profile-section-->
+
+            <ul class="navbar-nav flex-column text-left">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html"
+                  ><i class="fas fa-home fa-fw mr-2"></i>Home<span
+                    class="sr-only"
+                    >(current)</span
+                  ></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html"
+                  ><i class="fas fa-envelope-open-text fa-fw mr-2"></i
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="dark-mode-toggle text-center w-100">
+              <hr class="mb-4" />
+              <h4 class="toggle-name mb-3 ">
+                <i class="fas fa-adjust mr-1"></i>Dark Mode
+              </h4>
+
+              <input class="toggle" id="darkmode" type="checkbox" />
+              <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+            </div>
+            <!--//dark-mode-toggle-->
+          </div>
+        </nav>
       </div>
-    </main>
-    <footer class="main-footer">
-      Copyrights &copy; 2019
-    </footer>
-    <script src="dist/js/main.js"></script>
+      <!--//force-overflow-->
+    </header>
+
+    <div class="main-wrapper">
+      <section class="cta-section theme-bg-light py-5">
+        <div class="container text-center single-col-max-width">
+          <h2 class="heading">Contact</h2>
+          <div class="intro">
+            <p>
+              Interested in hiring me for your project or discuss about a
+              business idea? You can fill in the contact form below or send me
+              an email to
+              <a href="mailto:danielemingolla98ta@gmail.com"
+                >danielemingolla98ta@gmail.com</a
+              >
+            </p>
+            <p>
+              Want to get connected? Follow me on the social channels below.
+            </p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mb-3">
+                <a
+                  class="linkedin"
+                  href="https://www.linkedin.com/in/daniele-mingolla/"
+                  ><i class="fab fa-linkedin-in fa-fw fa-lg"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="instagram"
+                  href="https://www.instagram.com/daniele_mingolla/"
+                  ><i class="fab fa-instagram fa-fw fa-lg"></i
+                ></a>
+              </li>
+
+              <li class="list-inline-item mb-3">
+                <a class="github" href="https://github.com/danielemingolla"
+                  ><i class="fab fa-github-alt fa-fw fa-lg"></i
+                ></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+          </div>
+        </div>
+        <!--//container-->
+      </section>
+      <section class="contact-section px-3 py-5 p-md-5">
+        <div class="container">
+          <form
+            id="contact-form"
+            class="contact-form col-lg-8 mx-lg-auto"
+            method="post"
+            action="#"
+          >
+            <h3 class="text-center mb-3">Get In Touch</h3>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label class="sr-only" for="cname">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cname"
+                  name="name"
+                  placeholder="Name"
+                  minlength="3"
+                  required=""
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label class="sr-only" for="cemail">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="cemail"
+                  name="email"
+                  placeholder="Email"
+                  required=""
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group col-md-12">
+                <label class="sr-only" for="csubject">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="csubject"
+                  name="subject"
+                  placeholder="Subject"
+                  minlength="3"
+                  required=""
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group col-12">
+                <label class="sr-only" for="cmessage">Your message</label>
+                <textarea
+                  class="form-control"
+                  id="cmessage"
+                  name="message"
+                  placeholder="Enter your message"
+                  rows="7"
+                  minlength="5"
+                  required=""
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <div class="form-group col-12">
+                <button
+                  id="emailsubmit"
+                  type="submit"
+                  class="btn btn-block btn-primary py-2"
+                >
+                  Send Now
+                </button>
+              </div>
+            </div>
+            <!--//form-row-->
+          </form>
+        </div>
+        <!--//container-->
+      </section>
+
+      <footer class="footer text-center py-4">
+        <small class="copyright">Copyright 2019 &copy;</small>
+      </footer>
+    </div>
+    <!--//main-wrapper-->
+
+    <!-- Javascript -->
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Page Specific JS -->
+    <script
+      type="text/javascript"
+      src="assets/plugins/jquery-validation/jquery.validate.min.js"
+    ></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="assets/js/form.js"></script>
+
+    <!-- Dark Mode -->
+    <script src="assets/plugins/js-cookie.min.js"></script>
+    <script src="assets/js/dark-mode.js"></script>
   </body>
 </html>
