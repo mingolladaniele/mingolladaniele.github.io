@@ -13,8 +13,6 @@
     <a href="https://danielemingolla.github.io"><strong>Explore »</strong></a>
     <br />
     <br />
-    <a href="https://danielemingolla.github.io/work.html">My Work</a>
-    ·
     <a href="mailto: danielemingolla98ta@gmail.com">Contact Me</a>
   </p>
 </p>
