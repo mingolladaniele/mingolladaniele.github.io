@@ -52,7 +52,7 @@ body {
   line-height: 1.5;
   color: #292929;
   text-align: left;
-  background-color: #fff
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -2914,6 +2914,7 @@ hr {
 
 .main-wrapper {
   margin-left: 280px;
+  min-height: 100vh;
   background: #fff
 }
 
