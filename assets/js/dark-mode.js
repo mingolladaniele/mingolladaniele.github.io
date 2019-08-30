@@ -1,6 +1,9 @@
 /* Dependency: js-cookie plugin - Ref: https://github.com/js-cookie/js-cookie */
 
-$(document).ready(function() {
+
+
+$(document).ready(function () {
+  //$('.spinner-border').fadeOut(3000);
   setThemeFromCookie();
 
   function setThemeFromCookie() {
@@ -16,7 +19,7 @@ $(document).ready(function() {
     }
   }
 
-  $("#darkmode").on("change", function(e) {
+  $("#darkmode").on("change", function (e) {
     if ($(this).is(":checked")) {
       $("body").addClass("dark-mode");
       //Set cookies for 7 days
@@ -28,3 +31,5 @@ $(document).ready(function() {
     }
   });
 });
+
+
