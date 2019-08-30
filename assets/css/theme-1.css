@@ -1143,18 +1143,18 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 .nav-link {
   display: block;
-  padding: .5rem 1rem;
+  padding: .5rem 1rem
 }
 
 .nav-link:focus, .nav-link:hover {
-  text-decoration: none;
+  text-decoration: none
 }
 
 .nav-fill .nav-item {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
-  text-align: center;
+  text-align: center
 }
 
 .navbar {
@@ -1170,7 +1170,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  padding: .5rem 1rem;
+  padding: .5rem 1rem
 }
 
 .navbar>.container {
@@ -1196,7 +1196,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   -webkit-flex-direction: column;
   flex-direction: column;
   margin: 0;
-  padding: 0 ;
+  padding: 0;
   list-style: none
 }
 
@@ -1208,7 +1208,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 .navbar-text {
   display: inline-block;
   padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-bottom: .5rem
 }
 
 .navbar-collapse {
@@ -1219,7 +1219,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   flex-grow: 1;
   -webkit-box-align: center;
   -webkit-align-items: center;
-  align-items: center;
+  align-items: center
 }
 
 .navbar-toggler {
@@ -1227,14 +1227,14 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: none !important;
-  border-radius: .25rem;
+  border: none!important;
+  border-radius: .25rem
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
   text-decoration: none;
-  outline: none;
-  box-shadow: none;
+  outline: 0;
+  box-shadow: none
 }
 
 .navbar-toggler-icon {
@@ -1244,7 +1244,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
-  background-size: 100% 100%;
+  background-size: 100% 100%
 }
 
 @media (max-width:767.98px) {
@@ -1706,11 +1706,6 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 .rounded-right {
   border-top-right-radius: .25rem!important;
   border-bottom-right-radius: .25rem!important
-}
-
-.rounded-left {
-  border-top-left-radius: .25rem!important;
-  border-bottom-left-radius: .25rem!important
 }
 
 .rounded-lg {
@@ -2583,10 +2578,6 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
   }
 }
 
-.text-left {
-  text-align: left!important
-}
-
 .text-right {
   text-align: right!important
 }
@@ -2596,9 +2587,6 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 @media (min-width:768px) {
-  .text-md-left {
-    text-align: left!important
-  }
   .text-md-right {
     text-align: right!important
   }
@@ -2608,9 +2596,6 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 @media (min-width:992px) {
-  .text-lg-left {
-    text-align: left!important
-  }
   .text-lg-right {
     text-align: right!important
   }
@@ -3363,6 +3348,7 @@ body {
 #wportfolio {
   padding: 0 0 0 1rem
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   .fade {
