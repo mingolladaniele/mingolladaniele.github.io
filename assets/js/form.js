@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $("#contact-form").validate({
     messages: {
       name: {
@@ -15,16 +15,17 @@ $(document).ready(function() {
       }
     }
   });
-  $("#emailsubmit").click(function(event) {
+  $("#emailsubmit").click(function (event) {
     event.preventDefault();
     if ($("#contact-form").valid()) {
       $(location).attr(
         "href",
         "mailto:danielemingolla98ta@gmail.com?subject=" +
-          encodeURIComponent($("#csubject").val()) +
-          "&body=" +
-          encodeURIComponent($("#cmessage").val())
+        encodeURIComponent($("#csubject").val()) +
+        "&body=" +
+        encodeURIComponent($("#cmessage").val())
       );
     }
   });
+
 });
