@@ -33,3 +33,7 @@ $(document).ready(function () {
 });
 
 
+window.addEventListener("load", function () {
+  var hideloader = document.getElementsByClassName("loader");
+  hideloader[0].classList.add("hidden");
+});
