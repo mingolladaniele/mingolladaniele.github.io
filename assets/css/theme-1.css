@@ -1146,6 +1146,10 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   padding: .5rem 1rem
 }
 
+.nav-item:nth-child(1) {
+  padding-right: 10px;
+}
+
 .nav-link:focus, .nav-link:hover {
   text-decoration: none
 }
@@ -3348,7 +3352,6 @@ body {
 #wportfolio {
   padding: 0 0 0 1rem
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   .fade {
