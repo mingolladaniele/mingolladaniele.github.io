@@ -1,7 +1,5 @@
 /* Dependency: js-cookie plugin - Ref: https://github.com/js-cookie/js-cookie */
 
-
-
 $(document).ready(function () {
   //$('.spinner-border').fadeOut(3000);
   setThemeFromCookie();
