@@ -50,7 +50,7 @@
             <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" />
 
             <div class="bio mb-3">
-              Hi, my name is Daniele Mingolla and I'm a WEB developer and an ETF
+              My name is Daniele Mingolla and I'm a WEB developer and an ETF
               investor. Welcome to my personal website!
             </div>
             <!--//bio-->
@@ -104,9 +104,9 @@
         <div class="intro">
           <p>
             Interested in hiring me for your project or discuss about a
-            business idea? You can fill in the contact form below or send me
+            business idea?<br> You can fill in the contact form below or send me
             an email to
-            <a href="mailto:danielemingolla98ta@gmail.com">danielemingolla98ta@gmail.com</a>
+            <a href="mailto:danielemingollabusiness@gmail.com">danielemingollabusiness@gmail.com</a>
           </p>
           <p>
             Want to get connected? Follow me on the social channels below.
@@ -136,42 +136,33 @@
         <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="#">
           <h3 class="text-center mb-3">Get In Touch</h3>
           <div class="form-row">
-            <div class="form-group col-md-6">
-              <label class="sr-only" for="cname">Name</label>
-              <input type="text" class="form-control" id="cname" name="name" placeholder="Name" minlength="3"
-                required="" aria-required="true" />
-            </div>
-            <div class="form-group col-md-6">
-              <label class="sr-only" for="cemail">Email</label>
-              <input type="email" class="form-control" id="cemail" name="email" placeholder="Email" required=""
-                aria-required="true" />
-            </div>
             <div class="form-group col-md-12">
-              <label class="sr-only" for="csubject">Subject</label>
-              <input type="text" class="form-control" id="csubject" name="subject" placeholder="Subject" minlength="3"
-                required="" aria-required="true" />
+              <div class="form-group col-md-12">
+                <label class="sr-only" for="csubject">Subject</label>
+                <input type="text" class="form-control" id="csubject" name="subject" placeholder="Subject" minlength="3"
+                  required="" aria-required="true" />
+              </div>
+              <div class="form-group col-12">
+                <label class="sr-only" for="cmessage">Your message</label>
+                <textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="7"
+                  minlength="5" required="" aria-required="true"></textarea>
+              </div>
+              <div class="form-group col-12">
+                <button id="emailsubmit" type="submit" class="btn btn-block btn-primary py-2">
+                  Send Now
+                </button>
+              </div>
             </div>
-            <div class="form-group col-12">
-              <label class="sr-only" for="cmessage">Your message</label>
-              <textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="7"
-                minlength="5" required="" aria-required="true"></textarea>
-            </div>
-            <div class="form-group col-12">
-              <button id="emailsubmit" type="submit" class="btn btn-block btn-primary py-2">
-                Send Now
-              </button>
-            </div>
-          </div>
-          <!--//form-row-->
+            <!--//form-row-->
         </form>
       </div>
       <!--//container-->
     </section>
-
-    <footer class="footer text-center py-4">
+    <footer class="footer text-center">
       <small class="copyright">Daniele Mingolla &copy; 2019 Tutti i diritti riservati</small>
     </footer>
   </div>
+
   <!--//main-wrapper-->
 
   <!-- Javascript -->
