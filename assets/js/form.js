@@ -14,7 +14,7 @@ $(document).ready(function () {
     if ($("#contact-form").valid()) {
       $(location).attr(
         "href",
-        "mailto:danielemingollabusiness@gmail.com?subject=" +
+        "mailto:daniele.mingolla.jobs@gmail.com?subject=" +
         encodeURIComponent($("#csubject").val()) +
         "&body=" +
         encodeURIComponent($("#cmessage").val())
