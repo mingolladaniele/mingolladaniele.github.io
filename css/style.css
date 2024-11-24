@@ -1350,4 +1350,33 @@ body {
     gap: 2.5rem;
   }
 }
+
+/* Update footer styles to be more specific */
+.footer .footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem !important; /* Added !important to ensure gap is applied */
+  margin: 1rem 0;
+}
+
+.footer .footer-social a {
+  color: rgba(255, 255, 255, 0.8) !important; /* Force white color */
+  font-size: 1.5rem;
+  text-decoration: none; /* Ensure no underline */
+  transition: all 0.3s ease;
+  padding: 0.5rem; /* Add padding for better touch target */
+}
+
+.footer .footer-social a:hover {
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+/* Update mobile styles to be more specific */
+@media screen and (max-width: 768px) {
+  .footer .footer-social {
+    justify-content: center;
+    gap: 2.5rem !important;
+  }
+}
   
