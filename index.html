@@ -2,277 +2,336 @@
 <html lang="en">
 
 <head>
-  <title>
-    DANIELE MINGOLLA
-  </title>
-
-  <!-- Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Welcome to Daniele Mingolla's website. I am a Data Scientist with a strong academic background in Computer Science and Data Science. Explore my passion for data analysis, critical thinking, philosophy, and entrepreneurship through personal projects and a podcast where I interview experts and entrepreneurs. Join me on this exciting journey of discovery." />
-  <meta name="keywords" content="data scientist italia, data science, faang, machine learning">
-  <meta name="author" content="Daniele Mingolla" />
-  <link rel="shortcut icon" href="favicon.ico" />
+    content="Senior Full Stack Developer specializing in cloud solutions, AI integration, and scalable web applications">
+  <title>Daniele Mingolla - Full Stack Developer</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- FontAwesome JS-->
-  <script src="https://kit.fontawesome.com/1695380756.js"></script>
-  <script
-    type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })();</script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
+  <!-- Preload critical assets -->
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="preload" as="script" href="js/github-projects.js">
 
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css" />
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body class="dark-mode">
-  <!--LOADER-->
-  <div class="loader">
-    <img src="./assets/images/reducedicon.png" alt="LOADING..." class="image">
-    <p class="p-loader">I'm thinking...</p>
-  </div>
-  <!--END LOADER-->
-  <header class="header text-center">
-    <div class="force-overflow">
-      <h1 class="blog-name pt-lg-4 mb-0">
-        <a href="index.html">DANIELE MINGOLLA</a>
-      </h1>
-
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div id="navigation" class="navbar-collapse flex-column">
-          <div class="profile-section pt-3 pt-lg-0">
-            <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png"
-              alt="Profile Picture" />
-            <div class="bio mb-3">
-              <b>DATA SCIENTIST</b>
-            </div>
-            <!--//bio-->
-            <ul class="social-list list-inline py-2 mx-auto">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/daniele-mingolla/"><i class="fab fa-linkedin-in fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/mingolladaniele"><i class="fab fa-github-alt fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.youtube.com/channel/UCI3hH6hEUl8cYjUhF8u1_ag"><i class="fab fa-youtube"></i></a>
-              </li>
-            </ul>
-            <!--//social-list-->
-            <hr />
-          </div>
-          <!--//profile-section-->
-
-          <ul class="navbar-nav flex-column text-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2 "></i>HOME<span
-                  class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">
-                <i class="fas fa-envelope mr-2"></i>CONTACTS
-              </a>
-            </li>
-          </ul>
-          <div class="dark-mode-toggle text-center w-100">
-            <hr class="mb-4" />
-            <h4 class="toggle-name mb-3 ">
-              <i class="fas fa-adjust mr-1"></i>NIGHT MODE
-            </h4>
-            <input class="toggle" id="darkmode" type="checkbox" />
-            <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
-          </div>
-          <!--//dark-mode-toggle-->
-        </div>
-      </nav>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <span class="text-primary">DM</span> | Data Scientist
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!--//force-overflow-->
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section d-flex align-items-center text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Profile image at the top -->
+          <div class="profile-image mb-4">
+            <img src="assets/images/profile.png" alt="Daniele Mingolla" class="rounded-circle profile-img">
+          </div>
+
+          <h1 class="display-4 fw-bold mb-3">Daniele Mingolla</h1>
+          <h2 class="h3 mb-4">Data Scientist at Glovo</h2>
+
+          <p class="lead mb-4">
+            Turning complex data into business impact through machine learning and causal inference. 
+            Currently driving <span class="highlight-metric">€200K+ quarterly revenue</span> through targeted systems.
+          </p>
+          <p class="lead mb-4">
+            Host of <a href="https://youtube.com/playlist?list=PLbRm3DKxaXfgEn74JU5DS5XeX09s5ZRRw&si=DuBaKZFJDwcdubbn" class="podcast-link"
+              target="_blank"><span class="highlight-metric">yLearner Podcast</span></a>,
+            where I interview industry experts and CEOs about data science, AI, and business innovation.
+          </p>
+
+          <!-- Social links with clear CTAs -->
+          <div class="social-links mb-4">
+            <a href="https://linkedin.com/in/daniele-mingolla" class="btn btn-outline-light" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/mingolladaniele" class="btn btn-outline-light" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.youtube.com/channel/UCI3hH6hEUl8cYjUhF8u1_ag?sub_confirmation=1" class="btn btn-outline-light" target="_blank">
+              <i class="fab fa-youtube"></i> YouTube
+            </a>
+          </div>
+
+          <!-- Primary CTA -->
+          <div class="hero-cta">
+            <div class="cta-wrapper">
+              <a href="assets/cv/Daniele_Mingolla_Resume_nph.pdf" class="cta-button" target="_blank">
+                <span class="icon"><i class="fas fa-file-alt"></i></span>
+                <span class="text">Resume</span>
+              </a>
+              <div class="cta-divider"></div>
+              <a href="mailto:daniele.mingolla.jobs@gmail.com" class="cta-button">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <span class="text">Contact</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
-  <div class="main-wrapper">
 
-    <section class="about-me-section p-3 p-lg-5 theme-bg-light">
-      <div class="container">
-        <div class="profile-teaser media flex-column flex-lg-row">
-          <div class="media-body">
-            <h2 class="name font-weight-bold mb-1">Daniele Mingolla</h2>
-            <div class="tagline mb-1">DATA SCIENTIST</div>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <div class="about-image-wrapper">
+            <img src="./assets/images/profile-lg.jpg" alt="Daniele Mingolla" class="about-profile-img">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="experience-summary">
+            <h3>Professional Journey</h3>
+            <p class="lead mb-4">Data Scientist with a strong engineering background, specializing in machine learning,
+              causal inference, and scalable data solutions.</p>
 
-            <div class="bio mb-2">
-              <p> I am a Data Scientist with a strong academic background in Computer Science and Data Science. I've
-                worked in diverse industries, including mobile gaming, logistics, and food delivery, with renowned
-                companies such as Socialpoint, Amazon, and Glovo.
-              </p>
-              <p>
-                Passionate about both the business and technical aspects, I excel in hybrid roles where I can create
-                impactful solutions and contribute as an individual.
-                Explore my projects, <a
-                  href="https://youtube.com/playlist?list=PLbRm3DKxaXfgEn74JU5DS5XeX09s5ZRRw">listen to my podcast</a>,
-                and connect with me for collaborations and opportunities.
-              </p>
+            <div class="experience-timeline">
+              <div class="experience-item">
+                <h4>Data Scientist - Glovo</h4>
+                <p class="text-muted">March 2024 - Present</p>
+                <ul>
+                  <li>Designing targeted lunch promotion system with €200K quarterly profit impact</li>
+                  <li>Leading causal inference analysis for EU policy evaluation</li>
+                  <li>Developing promotion algorithms for rapid delivery service</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <h4>Data Scientist - SocialPoint</h4>
+                <p class="text-muted">January 2023 - March 2024</p>
+                <ul>
+                  <li>Increased ARPU by 5% through advanced matchmaking system</li>
+                  <li>Implemented genetic algorithms for game optimization</li>
+                  <li>Built robust ETL processes for business metrics</li>
+                </ul>
+              </div>
             </div>
-            <!--//bio-->
-            <div class="mb-4">
-              <a class="btn btn-primary mr-2 mb-3" href="assets/cv/Daniele_Mingolla_Resume_nph.pdf"><i
-                  class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-inline">Resume</span></a>
+
+            <div class="text-end mt-4">
+              <a href="assets/Daniele_Mingolla_Resume.pdf" class="text-muted small" target="_blank">
+                View full experience <i class="fas fa-arrow-right ms-1"></i>
+              </a>
             </div>
           </div>
-          <!--//media-body-->
-          <img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="assets/images/profile-lg.jpg" alt="Profile-LG" />
         </div>
       </div>
-    </section>
-    <!--//about-me-section-->
+    </div>
+  </section>
 
-    <section class="overview-section p-3 p-lg-5">
-      <div class="container">
-        <h2 class="section-title font-weight-bold mb-3">Projects</h2>
-        <div class="section-intro mb-3">
-          I am driven by a passion for data analysis, critical thinking, philosophy, and entrepreneurship, and I channel
-          my knowledge and self-taught skills into personal projects that I diligently work on. For an updated
-          compilation of my projects, you can explore my <a href="https://github.com/mingolladaniele">GitHub
-            profile</a>.
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills & Expertise</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-3">Machine Learning</h5>
+              <ul class="list-unstyled skill-list">
+                <li><span class="tool-name">PyTorch & TensorFlow:</span> Deep Learning Models</li>
+                <li><span class="tool-name">Scikit-learn:</span> Classical ML Algorithms</li>
+                <li><span class="tool-name">Hugging Face:</span> NLP Transformers</li>
+                <li><span class="tool-name">OpenCV & PIL:</span> Computer Vision</li>
+                <li><span class="tool-name">XGBoost & LightGBM:</span> Gradient Boosting</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <!-- Start Item-->
-          <div class="item col-md-4">
-            <div class="item-inner">
-              <div class="item-icon">
-                <i class="fas fa-underline"></i>
-              </div>
-              <a href="https://github.com/mingolladaniele/topic_modelling_users_feedbacks">
-                <h3 class="item-title">Topic Modelling using Bert and NMF</h3>
-              </a>
-              <div class="item-desc">
-                Applied BERT and NMF clustering to analyze a dataset containing feedbacks on a streaming service.
-                Crafted an API in
-                Flask for seamless interaction.
-              </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-3">Data Science</h5>
+              <ul class="list-unstyled skill-list">
+                <li><span class="tool-name">Pandas & NumPy:</span> Data Processing</li>
+                <li><span class="tool-name">Statsmodels:</span> Statistical Analysis</li>
+                <li><span class="tool-name">DoWhy & EconML:</span> Causal Inference</li>
+                <li><span class="tool-name">Prophet & ARIMA:</span> Time Series</li>
+                <li><span class="tool-name">Plotly & Seaborn:</span> Visualization</li>
+              </ul>
             </div>
           </div>
-          <!-- End Item-->
-          <!-- Start Item-->
-          <div class="item col-md-4">
-            <div class="item-inner">
-              <div class="item-icon">
-                <i class="fas fa-diagnoses"></i>
-              </div>
-              <a href="https://github.com/mingolladaniele/weld-anomaly-detection">
-                <h3 class="item-title">Welding Anomaly Detection System</h3>
-              </a>
-              <div class="item-desc">
-                A Welding Anomaly Detection system using unsupervised Machine Learning and statistical analysis to
-                identify anomalies in
-                welding process curves.
-              </div>
-            </div>
-          </div>
-          <!-- End Item-->
-          <!-- Start Item-->
-          <div class="item col-md-4">
-            <div class="item-inner">
-              <div class="item-icon">
-                <i class="fas fa-stream"></i>
-              </div>
-              <a href="https://github.com/mingolladaniele/parallelized-pipelines-data-science">
-                <h3 class="item-title">Parallel Pipeline for Analyzing Book Publishers’ Online Catalog</h3>
-              </a>
-              <div class="item-desc">
-                A pipeline to analyze data scraped from major Italian book publishers’ online catalogs to identify the
-                most influential
-                features of a book on the book’s price.
-              </div>
-            </div>
-          </div>
-          <!-- End Item-->
-          <!-- Start Item-->
-          <div class="item col-md-4">
-            <div class="item-inner">
-              <div class="item-icon">
-                <i class="fas fa-smile-beam"></i>
-              </div>
-              <a href="https://github.com/mingolladaniele/sentiment_analysis_performances_comparison">
-                <h3 class="item-title">Predictive models for Sentiment Analysis on hotel reviews</h3>
-              </a>
-              <div class="item-desc">
-                Developed and compared the performance of different machine/deep learning models in predicting the
-                sentiment of hotel
-                and B&B reviews.
-              </div>
-            </div>
-          </div>
-          <!-- End Item-->
-          <!-- Start Item-->
-          <div class="item col-md-4">
-            <div class="item-inner">
-              <div class="item-icon">
-                <i class="fab fa-yandex-international"></i>
-              </div>
-              <a href="https://www.youtube.com/playlist?list=PLbRm3DKxaXfgEn74JU5DS5XeX09s5ZRRw">
-                <h3 class="item-title">yLearner</h3>
-              </a>
-              <div class="item-desc">
-                <b>yLearner</b> is my podcast born from the desire to spread information on very important topics such
-                as study method, time organization, personal finance and entrepreneurship by having experts speak and share their valuable insights.
-              </div>
-            </div>
-          </div>
-          <!-- End Item-->
-          <div class="item col-md-4">
-            <div class="item-inner">
-              <div class="item-icon">
-                <i class="fas fa-chart-line" href=""></i>
-              </div>
-              <a href="https://www.justetf.com/it/portfolio/69f6b">
-                <h3 class="item-title">ETF Investment Strategy</h3>
-              </a>
-              <div class="item-desc">
-                Utilizing the resources offered by <a href="https://www.justetf.com/it/portfolio/69f6b">JustETF</a>, I
-                monitor and evaluate my investment strategy, with the details of capital allocation outlined in the link
-                provided.
-              </div>
-            </div>
-          </div>
-          <!-- End Item-->
-          <div class="item col-md-4">
-            <div class="item-inner">
-              <div class="item-icon"><i class="fas fa-pen-fancy"></i></div>
-              <a href="https://github.com/mingolladaniele/ARTICLEES_WEBAPP_FLASK">
-                <h3 class="item-title">Profile-Based Article Sharing Web Application</h3>
-              </a>
-              <div class="item-desc">
-                A web application where users can create a profile and write articles to share with other members of the
-                community.
-              </div>
-            </div>
-          </div>
-          <!--//item-inner-->
         </div>
-        <!--//item-->
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-3">Engineering</h5>
+              <ul class="list-unstyled skill-list">
+                <li><span class="tool-name">MLflow & DVC:</span> ML Pipelines</li>
+                <li><span class="tool-name">PostgreSQL & MongoDB:</span> Databases</li>
+                <li><span class="tool-name">PySpark:</span> Big Data Processing</li>
+                <li><span class="tool-name">AWS & GCP:</span> Cloud Services</li>
+                <li><span class="tool-name">Docker & GitHub Actions:</span> CI/CD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--//container-->
-    </section>
-    <footer class="footer text-center">
-      <small class="copyright">Daniele Mingolla &copy; | 2024 All rights reserved</small>
-    </footer>
-  </div>
-  <!--//main-wrapper-->
 
-  <!-- Javascript -->
-  <script src="assets/plugins/jquery-3.3.1.min.js"></script>
-  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Dark Mode -->
-  <script src="assets/plugins/js-cookie.min.js"></script>
-  <script src="assets/js/dark-mode.js"></script>
+      <!-- Add AB Testing Section -->
+      <div class="experimentation-section mt-5">
+        <h3 class="text-center mb-4">End-to-End Experimentation</h3>
+        <div class="experiment-flow">
+          <div class="experiment-step">
+            <div class="step-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h6>Hypothesis</h6>
+            <p>Problem Definition & Research Design</p>
+          </div>
+          <div class="experiment-step">
+            <div class="step-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h6>Design</h6>
+            <p>Statistical Power & Sample Size</p>
+          </div>
+          <div class="experiment-step">
+            <div class="step-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h6>Analysis</h6>
+            <p>Statistical Testing & Inference</p>
+          </div>
+          <div class="experiment-step">
+            <div class="step-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h6>Decision</h6>
+            <p>Business Impact & Implementation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">My Public Projects</h2>
+      <p class="text-center text-muted mb-5">
+        A selection of my open-source contributions and personal projects
+      </p>
+      <div id="github-projects" class="row g-4">
+        <!-- Projects will be dynamically loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-5 contact-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+          <h2 class="section-title mb-3">Let's Create Something Amazing Together</h2>
+          <p class="lead text-muted">
+            I bring more than just technical skills - I bring innovation, problem-solving mindset,
+            and a track record of delivering business impact.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="contact-card">
+            <form id="contact-form" class="contact-form p-4 rounded-lg">
+              <div class="mb-4">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control form-control-lg" id="name" required>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control form-control-lg" id="email" required>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control form-control-lg" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                Send Message
+                <i class="fas fa-paper-plane ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="social-links mb-4">
+            <a href="https://linkedin.com/in/daniele-mingolla" class="social-link" target="_blank"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/mingolladaniele" class="social-link" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCI3hH6hEUl8cYjUhF8u1_ag" class="social-link" target="_blank"
+              aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="footer-quote mb-4">
+            "Turning Data into Impact, One Solution at a Time"
+          </div>
+          <div class="footer-info">
+            <p class="copyright mb-2">
+              &copy; 2024 Daniele Mingolla. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/github-projects.js"></script>
+  <script src="js/contact-form.js"></script>
 </body>
 
 </html>
