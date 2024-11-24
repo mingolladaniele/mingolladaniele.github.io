@@ -252,40 +252,22 @@ body {
 
 /* Profile image styling */
 .profile-image-container {
-    position: relative;
-    overflow: hidden;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-profile-img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
 
-.profile-image-container img {
-    transition: all 0.5s ease;
-}
-
-.profile-image-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(74, 144, 226, 0.2);
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.profile-image-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.profile-image-container:hover img {
+.hero-profile-img:hover {
     transform: scale(1.05);
-}
-
-.profile-image-container:hover::after {
-    opacity: 1;
 }
 
 /* Experience timeline styling */
@@ -1316,5 +1298,30 @@ body {
 
 .highlight-metric {
     animation: metricPulse 3s infinite;
+}
+
+.profile-image-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.hero-profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Remove the old about-image styles */
+.about-image-wrapper,
+.about-profile-img {
+  display: none;
 }
   
