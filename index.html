@@ -66,7 +66,7 @@
 
           <p class="lead mb-4">
             Turning complex data into business impact through machine learning and causal inference. 
-            Currently driving <span class="highlight-metric">€200K+ quarterly revenue</span> through targeted systems.
+            Currently driving <span class="highlight-metric">projected €200K+ annual revenue</span> through targeted systems.
           </p>
           <p class="lead mb-4">
             Host of <a href="https://youtube.com/playlist?list=PLbRm3DKxaXfgEn74JU5DS5XeX09s5ZRRw&si=DuBaKZFJDwcdubbn" class="podcast-link"
@@ -127,7 +127,7 @@
                 <h4>Data Scientist - Glovo</h4>
                 <p class="text-muted">March 2024 - Present</p>
                 <ul>
-                  <li>Designing targeted lunch promotion system with €200K quarterly profit impact</li>
+                  <li>Designing targeted lunch promotion system with projected significant revenue impact</li>
                   <li>Leading causal inference analysis for EU policy evaluation</li>
                   <li>Developing promotion algorithms for rapid delivery service</li>
                 </ul>
@@ -145,7 +145,7 @@
             </div>
 
             <div class="text-end mt-4">
-              <a href="assets/Daniele_Mingolla_Resume.pdf" class="text-muted small" target="_blank">
+              <a href="./assets/cv/Daniele_Mingolla_Resume_nph.pdf" class="text-muted small" target="_blank">
                 View full experience <i class="fas fa-arrow-right ms-1"></i>
               </a>
             </div>
@@ -332,6 +332,37 @@
   <!-- Custom JS -->
   <script src="js/github-projects.js"></script>
   <script src="js/contact-form.js"></script>
+
+  <!-- Add this just before closing body tag -->
+  <script>
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                document.querySelector('.navbar-toggler').click();
+            }
+        });
+    });
+
+    // Smooth scroll to sections
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+  </script>
 </body>
 
 </html>
