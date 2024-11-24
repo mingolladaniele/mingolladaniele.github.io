@@ -1352,29 +1352,32 @@ body {
 }
 
 /* Update footer styles to be more specific */
-.footer .footer-social {
+footer.footer .footer-social {
   display: flex;
   justify-content: center;
-  gap: 2rem !important; /* Added !important to ensure gap is applied */
+  gap: 2.5rem !important;
   margin: 1rem 0;
 }
 
-.footer .footer-social a {
-  color: rgba(255, 255, 255, 0.8) !important; /* Force white color */
+footer.footer .footer-social a,
+footer.footer .footer-social a:link,
+footer.footer .footer-social a:visited {
+  color: rgba(255, 255, 255, 0.8) !important;
   font-size: 1.5rem;
-  text-decoration: none; /* Ensure no underline */
+  text-decoration: none !important;
   transition: all 0.3s ease;
-  padding: 0.5rem; /* Add padding for better touch target */
+  padding: 0.5rem;
 }
 
-.footer .footer-social a:hover {
+footer.footer .footer-social a:hover,
+footer.footer .footer-social a:active {
   color: white !important;
   transform: translateY(-2px);
 }
 
-/* Update mobile styles to be more specific */
+/* Remove any other footer-social media queries and use this one */
 @media screen and (max-width: 768px) {
-  .footer .footer-social {
+  footer.footer .footer-social {
     justify-content: center;
     gap: 2.5rem !important;
   }
