@@ -65,12 +65,13 @@
           <h2 class="h3 mb-4">Data Scientist at Glovo</h2>
 
           <p class="lead mb-4">
-            Turning complex data into business impact through machine learning and causal inference. 
-            Currently driving <span class="highlight-metric">projected €200K+ annual revenue</span> through targeted systems.
+            Turning complex data into business impact through machine learning and causal inference.
+            Currently driving <span class="highlight-metric">projected €200K+ annual revenue</span> through targeted
+            systems.
           </p>
           <p class="lead mb-4">
-            Host of <a href="https://youtube.com/playlist?list=PLbRm3DKxaXfgEn74JU5DS5XeX09s5ZRRw&si=DuBaKZFJDwcdubbn" class="podcast-link"
-              target="_blank"><span class="highlight-metric">yLearner Podcast</span></a>,
+            Host of <a href="https://youtube.com/playlist?list=PLbRm3DKxaXfgEn74JU5DS5XeX09s5ZRRw&si=DuBaKZFJDwcdubbn"
+              class="podcast-link" target="_blank"><span class="highlight-metric">yLearner Podcast</span></a>,
             where I interview industry experts and CEOs about data science, AI, and business innovation.
           </p>
 
@@ -82,7 +83,8 @@
             <a href="https://github.com/mingolladaniele" class="btn btn-outline-light" target="_blank">
               <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://www.youtube.com/channel/UCI3hH6hEUl8cYjUhF8u1_ag?sub_confirmation=1" class="btn btn-outline-light" target="_blank">
+            <a href="https://www.youtube.com/channel/UCI3hH6hEUl8cYjUhF8u1_ag?sub_confirmation=1"
+              class="btn btn-outline-light" target="_blank">
               <i class="fab fa-youtube"></i> YouTube
             </a>
           </div>
@@ -337,30 +339,30 @@
   <script>
     // Close mobile menu when clicking a link
     document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-            if (navbarCollapse.classList.contains('show')) {
-                document.querySelector('.navbar-toggler').click();
-            }
-        });
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          document.querySelector('.navbar-toggler').click();
+        }
+      });
     });
 
     // Smooth scroll to sections
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            const navbarHeight = document.querySelector('.navbar').offsetHeight;
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
 
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
+        const targetElement = document.querySelector(targetId);
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
         });
+      });
     });
   </script>
 </body>
