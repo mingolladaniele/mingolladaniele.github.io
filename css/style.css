@@ -1324,4 +1324,30 @@ body {
 .about-profile-img {
   display: none;
 }
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.footer-social a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Add responsive styles for mobile */
+@media screen and (max-width: 768px) {
+  .footer-social {
+    justify-content: center;
+    gap: 2.5rem;
+  }
+}
   
