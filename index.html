@@ -36,16 +36,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about" data-umami-event="nav_about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#skills" data-umami-event="nav_skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#projects" data-umami-event="nav_projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact" data-umami-event="nav_contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -77,14 +77,14 @@
 
           <!-- Social links with clear CTAs -->
           <div class="social-links mb-4">
-            <a href="https://linkedin.com/in/daniele-mingolla" class="btn btn-outline-light" target="_blank">
+            <a href="https://linkedin.com/in/daniele-mingolla" class="btn btn-outline-light" target="_blank" data-umami-event="social_linkedin">
               <i class="fab fa-linkedin"></i> LinkedIn
             </a>
-            <a href="https://github.com/mingolladaniele" class="btn btn-outline-light" target="_blank">
+            <a href="https://github.com/mingolladaniele" class="btn btn-outline-light" target="_blank" data-umami-event="social_github">
               <i class="fab fa-github"></i> GitHub
             </a>
             <a href="https://www.youtube.com/channel/UCI3hH6hEUl8cYjUhF8u1_ag?sub_confirmation=1"
-              class="btn btn-outline-light" target="_blank">
+              class="btn btn-outline-light" target="_blank" data-umami-event="social_youtube">
               <i class="fab fa-youtube"></i> YouTube
             </a>
           </div>
@@ -92,12 +92,12 @@
           <!-- Primary CTA -->
           <div class="hero-cta">
             <div class="cta-wrapper">
-              <a href="assets/cv/Daniele_Mingolla_Resume_nph.pdf" class="cta-button" target="_blank">
+              <a href="assets/cv/Daniele_Mingolla_Resume_nph.pdf" class="cta-button" target="_blank" data-umami-event="resume_download">
                 <span class="icon"><i class="fas fa-file-alt"></i></span>
                 <span class="text">Resume</span>
               </a>
               <div class="cta-divider"></div>
-              <a href="mailto:daniele.mingolla.jobs@gmail.com" class="cta-button">
+              <a href="mailto:daniele.mingolla.jobs@gmail.com" class="cta-button" data-umami-event="contact_email">
                 <span class="icon"><i class="fas fa-envelope"></i></span>
                 <span class="text">Contact</span>
               </a>
@@ -268,7 +268,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6">
           <div class="contact-card">
-            <form id="contact-form" class="contact-form p-4 rounded-lg">
+            <form id="contact-form" class="contact-form p-4 rounded-lg" data-umami-event="form_submit">
               <div class="mb-4">
                 <label for="name" class="form-label">Your Name</label>
                 <input type="text" class="form-control form-control-lg" id="name" required>
