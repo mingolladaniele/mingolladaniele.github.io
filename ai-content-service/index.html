@@ -24,6 +24,8 @@
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://omniscient-beluga.pikapod.net" crossorigin>
   <link rel="dns-prefetch" href="https://omniscient-beluga.pikapod.net">
+  <link rel="preconnect" href="https://calendar.app.google" crossorigin>
+  <link rel="dns-prefetch" href="https://calendar.app.google">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,22 +34,35 @@
 
   <style>
     /* Minimal page-scoped styles; reuse site styles for consistency */
-    .service-hero { padding: 96px 0 56px; background: linear-gradient(135deg, #4A90E2, #2E5C8A); color: #fff; }
-    .service-hero h1 { font-weight: 800; }
+    .service-hero { padding: 112px 0 72px; background: linear-gradient(135deg, #4A90E2, #2E5C8A); color: #fff; }
+    .service-hero h1 { font-weight: 800; letter-spacing: -0.01em; }
+    .service-hero .lead { font-size: 1.25rem; max-width: 860px; margin-left: auto; margin-right: auto; }
     .proof-screenshot { border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.15); width: 100%; height: auto; }
-    .section-pad { padding: 64px 0; }
+    .section-pad { padding: 72px 0; }
     .list-icon { color: var(--primary-color); }
     .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,.1); }
     .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
     .video-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(135deg, #1e40af, #2563eb); text-align: center; padding: 24px; cursor: pointer; }
     .video-placeholder .title { font-size: 1.25rem; font-weight: 700; }
     .video-placeholder .subtitle { opacity: 0.9; }
-    .benefit-list { max-width: 720px; margin: 0 auto; }
+    .benefit-list { max-width: 860px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6; }
     .benefit-list li { display: flex; gap: .5rem; align-items: start; }
     .benefit-list .check { color: #22c55e; }
+    .two-col { display: grid; grid-template-columns: 1fr; gap: 24px; }
+    @media (min-width: 992px) { .two-col { grid-template-columns: 1fr 1fr; gap: 40px; } }
+    .card .card-body { padding: 1.25rem 1.25rem; }
+    .section-pad.bg-light { box-shadow: inset 0 1px 0 rgba(0,0,0,.04), inset 0 -1px 0 rgba(0,0,0,.04); }
     .sticky-cta { position: fixed; left: 0; right: 0; bottom: 12px; padding: 0 16px; z-index: 1040; display: none; }
     .sticky-cta .bar { background: #0d6efd; color: #fff; border-radius: 999px; box-shadow: 0 8px 24px rgba(13,110,253,.35); text-align: center; padding: 12px 20px; }
     @media (max-width: 576px) { .sticky-cta { display: block; } }
+
+    /* Desktop reading width */
+    @media (min-width: 992px) {
+      .readable { max-width: 860px; margin-left: auto; margin-right: auto; }
+      h1.display-5 { font-size: 3rem; }
+      h2 { font-size: 2rem; letter-spacing: -0.005em; }
+      p, li { font-size: 1.05rem; line-height: 1.7; }
+    }
   </style>
   <script defer src="https://omniscient-beluga.pikapod.net/script.js" data-website-id="752c2c45-13d8-49e9-8aa6-67982c5c1369"></script>
   <script type="application/ld+json">
@@ -69,10 +84,10 @@
       <div class="row align-items-center">
         <div class="col-lg-8 mx-auto text-center">
           <h1 class="display-5 mb-3">Turn Your Blog Into an Automated Traffic Engine.</h1>
-          <p class="lead mb-4">Leverage a custom-built AI pipeline to produce SEO-optimized content at scale, freeing up your team and capturing organic traffic from Google.</p>
+          <p class="lead mb-4 readable">Leverage a custom-built AI pipeline to produce SEO-optimized content at scale, freeing up your team and capturing organic traffic from Google.</p>
           <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-            <a href="#proof" class="btn btn-light btn-lg" data-umami-event="Click - See The Proof">See The Proof</a>
-            <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg" data-umami-event="Click - Book Call">Book a Free 15-Min Call</a>
+            <a href="#proof" class="btn btn-light btn-lg" data-umami-event="Click - See The Proof" aria-label="See proof section">See The Proof</a>
+            <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg" data-umami-event="Click - Book Call" aria-label="Book a free 15 minute call on Google Calendar">Book a Free 15-Min Call</a>
           </div>
           <ul class="benefit-list list-unstyled text-start mt-4 mx-auto">
             <li class="mb-2"><span class="check">✔</span><span>End-to-end: strategy, generation, on-page SEO, and publishing.</span></li>
@@ -91,8 +106,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2 class="mb-3">Publishing quality content is relentless. Your team's time is not.</h2>
-            <p class="fs-5">Content agencies are expensive, in-house writing is slow, and maintaining the cadence required to see real SEO results is difficult. The result is stalled growth, missed rankings, and teams stretched thin by constant production pressure.</p>
+            <h2 class="mb-3 readable">Publishing quality content is relentless. Your team's time is not.</h2>
+            <p class="fs-5 readable">Content agencies are expensive, in-house writing is slow, and maintaining the cadence required to see real SEO results is difficult. The result is stalled growth, missed rankings, and teams stretched thin by constant production pressure.</p>
           </div>
         </div>
       </div>
@@ -103,8 +118,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2 class="mb-4">The Solution: A Turnkey "AI Content Engine".</h2>
-            <ul class="list-unstyled fs-5">
+            <h2 class="mb-4 readable">The Solution: A Turnkey "AI Content Engine".</h2>
+            <ul class="list-unstyled fs-5 readable">
               <li class="mb-3"><span class="list-icon me-2">🔍</span><strong>Keyword & Content Strategy:</strong> We identify the topics your audience is searching for.</li>
               <li class="mb-3"><span class="list-icon me-2">⚙️</span><strong>Custom AI Pipeline:</strong> I build and deploy the automated system that generates, optimizes, and publishes content.</li>
               <li class="mb-1"><span class="list-icon me-2">🚀</span><strong>Launch & Handover:</strong> We launch the engine and I train your team on how to supervise it.</li>
@@ -119,24 +134,24 @@
       <div class="container">
         <div class="row justify-content-center mb-4">
           <div class="col-lg-9">
-            <h2 class="mb-3">Don't just take my word for it. See the results for yourself.</h2>
+            <h2 class="mb-3 readable">Don't just take my word for it. See the results for yourself.</h2>
           </div>
         </div>
 
         <div class="row g-4 justify-content-center align-items-center">
           <div class="col-lg-6">
-            <h5 class="mb-2">Live Case Study: An Automated Blog Attracting Organic Visitors.</h5>
-            <p>I built the system I'm offering to power my own blog. It runs automatically, publishing content about the European tech job market. You can see it live right now.</p>
-            <a href="https://www.trabajostecnologicoseuropa.com/blog" target="_blank" rel="noopener" class="btn btn-primary" data-umami-event="Click - View Case Study">View the Live Blog</a>
+            <h5 class="mb-2 readable">Live Case Study: An Automated Blog Attracting Organic Visitors.</h5>
+            <p class="readable">I built the system I'm offering to power my own blog. It runs automatically, publishing content about the European tech job market. You can see it live right now.</p>
+            <a href="https://www.trabajostecnologicoseuropa.com/blog" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-umami-event="Click - View Case Study" aria-label="Open the live case study blog in a new tab">View the Live Blog</a>
           </div>
           <div class="col-lg-6">
-            <img src="../assets/ai-content-service/blog-desktop.png" class="proof-screenshot" alt="Homepage of the automated blog about European tech jobs" loading="lazy" decoding="async" fetchpriority="low">
+            <img src="../assets/ai-content-service/blog-desktop.png" class="proof-screenshot" alt="Homepage of the automated blog about European tech jobs" loading="lazy" decoding="async" fetchpriority="low" width="1600" height="900">
           </div>
         </div>
 
         <div class="row justify-content-center mt-5">
           <div class="col-lg-9">
-            <h5 class="mb-3">Watch the System in Action (2-Min Demo)</h5>
+            <h5 class="mb-3 readable">Watch the System in Action (2-Min Demo)</h5>
             <div class="video-wrapper" data-umami-event="Click - Play Demo Video">
               <div class="video-placeholder" role="button" aria-label="Demo video placeholder">
                 <div>
@@ -155,19 +170,19 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2 class="mb-4">Is this a fit?</h2>
-            <div class="row g-4">
-              <div class="col-md-6">
+            <h2 class="mb-4 readable">Is this a fit?</h2>
+            <div class="row g-4 two-col">
+              <div>
                 <h5>Best for</h5>
-                <ul>
+                <ul class="readable">
                   <li>Founders/marketers who need consistent, SEO-grade content at scale</li>
                   <li>SaaS, services, and content-led businesses targeting organic growth</li>
                   <li>Teams who want ownership of the pipeline after handover</li>
                 </ul>
               </div>
-              <div class="col-md-6">
+              <div>
                 <h5>Not for</h5>
-                <ul>
+                <ul class="readable">
                   <li>Teams expecting instant rankings without publishing cadence</li>
                   <li>Brands unwilling to review/approve first articles for tone</li>
                   <li>One-off article purchases without a strategy</li>
@@ -184,7 +199,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2 class="mb-4">How it works</h2>
+            <h2 class="mb-4 readable">How it works</h2>
             <div class="row g-4">
               <div class="col-md-4">
                 <div class="card h-100"><div class="card-body">
@@ -215,7 +230,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <h2 class="mb-4">Frequently asked questions</h2>
+            <h2 class="mb-4 readable">Frequently asked questions</h2>
             <details class="mb-3" data-umami-event="Click - FAQ Toggle">
               <summary class="fw-semibold">How fast can we launch?</summary>
               <div class="mt-2">Most teams launch a v1 in ~2 weeks including strategy and setup.</div>
@@ -242,9 +257,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="mb-3">Ready to put your content on autopilot?</h2>
-            <p class="fs-5 mb-4">Book a free, no-obligation 15-minute call to discuss your goals and see if this system is the right fit for your business.</p>
-            <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-umami-event="Click - Book Call">Book Your Free Strategy Call</a>
+            <h2 class="mb-3 readable">Ready to put your content on autopilot?</h2>
+            <p class="fs-5 mb-4 readable">Book a free, no-obligation 15-minute call to discuss your goals and see if this system is the right fit for your business.</p>
+            <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" data-umami-event="Click - Book Call" aria-label="Book your free strategy call on Google Calendar">Book Your Free Strategy Call</a>
           </div>
         </div>
       </div>
@@ -252,9 +267,9 @@
   </main>
 
   <!-- Sticky CTA (mobile only) -->
-  <div class="sticky-cta d-sm-none">
+  <div class="sticky-cta d-sm-none" role="region" aria-label="Quick booking">
     <div class="container">
-      <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener" class="bar d-block text-decoration-none" data-umami-event="Click - Sticky Book Call">Book a Free 15-Min Call</a>
+      <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener noreferrer" class="bar d-block text-decoration-none" data-umami-event="Click - Sticky Book Call" aria-label="Book a free 15 minute call on Google Calendar">Book a Free 15-Min Call</a>
     </div>
   </div>
 
