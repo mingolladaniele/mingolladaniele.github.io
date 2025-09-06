@@ -255,20 +255,29 @@
             <h2 class="mb-4 readable">How it works</h2>
             <div class="row g-4">
               <div class="col-md-4">
-                <div class="card h-100"><div class="card-body">
-                  <div class="text-primary fw-bold mb-2">1) Strategy</div>
+                <div class="card h-100 card-elevated"><div class="card-body">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <span class="badge bg-primary">1</span>
+                    <div class="fw-bold text-primary">Strategy</div>
+                  </div>
                   <p class="mb-0">Keyword research, topical map, and editorial plan aligned to your goals.</p>
                 </div></div>
               </div>
               <div class="col-md-4">
-                <div class="card h-100"><div class="card-body">
-                  <div class="text-primary fw-bold mb-2">2) Build</div>
+                <div class="card h-100 card-elevated"><div class="card-body">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <span class="badge bg-primary">2</span>
+                    <div class="fw-bold text-primary">Build</div>
+                  </div>
                   <p class="mb-0">Custom AI pipeline that drafts, optimizes, and queues content in your CMS.</p>
                 </div></div>
               </div>
               <div class="col-md-4">
-                <div class="card h-100"><div class="card-body">
-                  <div class="text-primary fw-bold mb-2">3) Launch & Handover</div>
+                <div class="card h-100 card-elevated"><div class="card-body">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <span class="badge bg-primary">3</span>
+                    <div class="fw-bold text-primary">Launch & Handover</div>
+                  </div>
                   <p class="mb-0">Go live, monitor, and train your team to supervise and scale.</p>
                 </div></div>
               </div>
@@ -284,22 +293,32 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2 class="mb-4 readable">Frequently asked questions</h2>
-            <details class="mb-3" data-umami-event="Click - FAQ Toggle">
-              <summary class="fw-semibold">How fast can we launch?</summary>
-              <div class="mt-2">Most teams launch a v1 in ~2 weeks including strategy and setup.</div>
-            </details>
-            <details class="mb-3" data-umami-event="Click - FAQ Toggle">
-              <summary class="fw-semibold">Who owns the content and pipeline?</summary>
-              <div class="mt-2">You do. Everything is delivered to your repo/CMS, with training.</div>
-            </details>
-            <details class="mb-3" data-umami-event="Click - FAQ Toggle">
-              <summary class="fw-semibold">Will articles be edited by a human?</summary>
-              <div class="mt-2">Yes. We include a light editorial pass for accuracy and tone.</div>
-            </details>
-            <details class="mb-3" data-umami-event="Click - FAQ Toggle">
-              <summary class="fw-semibold">Do we need a specific CMS?</summary>
-              <div class="mt-2">No. The pipeline integrates with most CMSs via APIs or publishing hooks.</div>
-            </details>
+            <div class="accordion" id="faq-accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1c">How fast can we launch?</button></h2>
+                <div id="faq1c" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
+                  <div class="accordion-body">Most teams launch a v1 in ~2 weeks including strategy and setup.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2c">Who owns the content and pipeline?</button></h2>
+                <div id="faq2c" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                  <div class="accordion-body">You do. Everything is delivered to your repo/CMS, with training.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3c">Will articles be edited by a human?</button></h2>
+                <div id="faq3c" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                  <div class="accordion-body">Yes. We include a light editorial pass for accuracy and tone.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4c">Do we need a specific CMS?</button></h2>
+                <div id="faq4c" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                  <div class="accordion-body">No. The pipeline integrates with most CMSs via APIs or publishing hooks.</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
