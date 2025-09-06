@@ -73,6 +73,14 @@
     .card-elevated { background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #4A90E2, #2E5C8A); background-origin: border-box; background-clip: padding-box, border-box; border: 1px solid transparent; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
     .proof-screenshot { transition: transform .2s ease, box-shadow .2s ease; }
     .proof-screenshot:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(0,0,0,.18); }
+    .fit-card { padding: 24px; }
+    .fit-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .fit-icon { width: 28px; height: 28px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; color: #fff; }
+    .accent-green { background: linear-gradient(135deg, #22c55e, #16a34a); }
+    .accent-red { background: linear-gradient(135deg, #ef4444, #dc2626); }
+    .icon-list { list-style: none; padding-left: 0; margin: 0; }
+    .icon-list li { display: grid; grid-template-columns: 24px 1fr; gap: 12px; align-items: start; margin-bottom: 10px; }
+    .icon-list svg { width: 20px; height: 20px; }
   </style>
   <script defer src="https://omniscient-beluga.pikapod.net/script.js" data-website-id="752c2c45-13d8-49e9-8aa6-67982c5c1369"></script>
   <script type="application/ld+json">
@@ -182,20 +190,38 @@
           <div class="col-lg-9">
             <h2 class="mb-4 readable">Is this a fit?</h2>
             <div class="row g-4 two-col">
-              <div>
-                <h5>Best for</h5>
-                <ul class="readable">
-                  <li>Founders/marketers who need consistent, SEO-grade content at scale</li>
-                  <li>SaaS, services, and content-led businesses targeting organic growth</li>
-                  <li>Teams who want ownership of the pipeline after handover</li>
+              <div class="card-elevated fit-card">
+                <div class="fit-header"><span class="fit-icon accent-green">✓</span><h5 class="mb-0">Best for</h5></div>
+                <ul class="icon-list readable">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Founders/marketers who need consistent, SEO-grade content at scale</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>SaaS, services, and content-led businesses targeting organic growth</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Teams who want ownership of the pipeline after handover</span>
+                  </li>
                 </ul>
               </div>
-              <div>
-                <h5>Not for</h5>
-                <ul class="readable">
-                  <li>Teams expecting instant rankings without publishing cadence</li>
-                  <li>Brands unwilling to review/approve first articles for tone</li>
-                  <li>One-off article purchases without a strategy</li>
+              <div class="card-elevated fit-card">
+                <div class="fit-header"><span class="fit-icon accent-red">!</span><h5 class="mb-0">Not for</h5></div>
+                <ul class="icon-list readable">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6l12 12" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Teams expecting instant rankings without publishing cadence</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6l12 12" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Brands unwilling to review/approve first articles for tone</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6l12 12" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>One-off article purchases without a strategy</span>
+                  </li>
                 </ul>
               </div>
             </div>
