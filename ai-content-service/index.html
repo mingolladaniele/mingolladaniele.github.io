@@ -63,6 +63,16 @@
       h2 { font-size: 2rem; letter-spacing: -0.005em; }
       p, li { font-size: 1.05rem; line-height: 1.7; }
     }
+
+    /* Aesthetic polish */
+    .section-heading { position: relative; padding-bottom: .5rem; }
+    .section-heading::after { content: ""; position: absolute; left: 0; bottom: 0; width: 64px; height: 4px; background: linear-gradient(90deg, #3b82f6, #1e40af); border-radius: 4px; }
+    .btn-gradient { background-image: linear-gradient(135deg, #3b82f6, #1e40af); border: none; color: #fff; }
+    .btn-gradient:hover { filter: brightness(1.05); transform: translateY(-1px); }
+    .btn-gradient:active { transform: translateY(0); }
+    .card-elevated { background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #4A90E2, #2E5C8A); background-origin: border-box; background-clip: padding-box, border-box; border: 1px solid transparent; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+    .proof-screenshot { transition: transform .2s ease, box-shadow .2s ease; }
+    .proof-screenshot:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(0,0,0,.18); }
   </style>
   <script defer src="https://omniscient-beluga.pikapod.net/script.js" data-website-id="752c2c45-13d8-49e9-8aa6-67982c5c1369"></script>
   <script type="application/ld+json">
@@ -142,7 +152,7 @@
           <div class="col-lg-6">
             <h5 class="mb-2 readable">Live Case Study: An Automated Blog Attracting Organic Visitors.</h5>
             <p class="readable">I built the system I'm offering to power my own blog. It runs automatically, publishing content about the European tech job market. You can see it live right now.</p>
-            <a href="https://www.trabajostecnologicoseuropa.com/blog" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-umami-event="Click - View Case Study" aria-label="Open the live case study blog in a new tab">View the Live Blog</a>
+            <a href="https://www.trabajostecnologicoseuropa.com/blog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-gradient" data-umami-event="Click - View Case Study" aria-label="Open the live case study blog in a new tab">View the Live Blog</a>
           </div>
           <div class="col-lg-6">
             <img src="../assets/ai-content-service/blog-desktop.png" class="proof-screenshot" alt="Homepage of the automated blog about European tech jobs" loading="lazy" decoding="async" fetchpriority="low" width="1600" height="900">
@@ -259,7 +269,7 @@
           <div class="col-lg-8 text-center">
             <h2 class="mb-3 readable">Ready to put your content on autopilot?</h2>
             <p class="fs-5 mb-4 readable">Book a free, no-obligation 15-minute call to discuss your goals and see if this system is the right fit for your business.</p>
-            <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" data-umami-event="Click - Book Call" aria-label="Book your free strategy call on Google Calendar">Book Your Free Strategy Call</a>
+            <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg btn-gradient" data-umami-event="Click - Book Call" aria-label="Book your free strategy call on Google Calendar">Book Your Free Strategy Call</a>
           </div>
         </div>
       </div>
