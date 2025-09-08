@@ -973,14 +973,7 @@
       z-index: 2;
     }
     .timeline-line {
-      position: absolute;
-      top: 80px;
-      left: 12.5%;
-      right: 12.5%;
-      height: 4px;
-      background: linear-gradient(90deg, #3b82f6, #8b5cf6, #10b981, #f59e0b);
-      border-radius: 2px;
-      z-index: 1;
+      display: none;
     }
     .process-step {
       background: #ffffff;
@@ -1101,6 +1094,183 @@
       .process-step {
         margin-bottom: 2rem;
       }
+    }
+
+    /* Enhanced Fit Section */
+    .fit-section {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      position: relative;
+    }
+    .fit-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(59,130,246,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+      opacity: 0.3;
+    }
+    .fit-headline {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: #1e293b;
+      line-height: 1.2;
+      position: relative;
+      z-index: 2;
+    }
+    .fit-subtitle {
+      font-size: 1.3rem;
+      color: #64748b;
+      font-weight: 500;
+      position: relative;
+      z-index: 2;
+    }
+    .fit-comparison {
+      position: relative;
+      z-index: 2;
+    }
+    .fit-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      border: 2px solid #e2e8f0;
+      transition: all 0.4s ease;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    .fit-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #10b981, #059669);
+    }
+    .fit-card.negative::before {
+      background: linear-gradient(90deg, #ef4444, #dc2626);
+    }
+    .fit-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+    .fit-card.positive:hover {
+      border-color: #10b981;
+    }
+    .fit-card.negative:hover {
+      border-color: #ef4444;
+    }
+    .fit-card-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .fit-icon-large {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      transition: all 0.3s ease;
+    }
+    .fit-card.negative .fit-icon-large {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+    }
+    .fit-card:hover .fit-icon-large {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+    }
+    .fit-card.negative:hover .fit-icon-large {
+      box-shadow: 0 8px 25px rgba(239, 68, 68, 0.4);
+    }
+    .fit-card-header h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+    }
+    .fit-card-subtitle {
+      color: #64748b;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    .fit-criteria {
+      margin-top: 2rem;
+    }
+    .criterion {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f8fafc;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+    .criterion:hover {
+      background: #f1f5f9;
+      transform: translateX(5px);
+    }
+    .criterion-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #10b981;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .fit-card.negative .criterion-icon {
+      background: #ef4444;
+    }
+    .criterion-content {
+      flex: 1;
+    }
+    .criterion-title {
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+    }
+    .criterion-desc {
+      color: #64748b;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .fit-cta {
+      margin-top: 3rem;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .fit-cta p {
+      color: #64748b;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .fit-cta .btn {
+      background: linear-gradient(135deg, #3b82f6, #1e40af);
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+    .fit-cta .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+      background: linear-gradient(135deg, #1e40af, #1e3a8a);
     }
 
     /* Simple FAQ Section */
@@ -1695,11 +1865,6 @@
                     <div class="step-number">01</div>
                     <h4 class="step-title">Strategy & Research</h4>
                     <p class="step-description">Deep keyword research and content mapping aligned to your business goals and audience search behavior.</p>
-                    <div class="step-features">
-                      <span class="feature-tag">Competitor Analysis</span>
-                      <span class="feature-tag">Keyword Mapping</span>
-                      <span class="feature-tag">Content Calendar</span>
-                    </div>
                     <div class="step-duration">Week 1</div>
                   </div>
                 </div>
@@ -1716,11 +1881,6 @@
                     <div class="step-number">02</div>
                     <h4 class="step-title">Build & Configure</h4>
                     <p class="step-description">Custom AI pipeline development tailored to your brand voice, style, and publishing workflow.</p>
-                    <div class="step-features">
-                      <span class="feature-tag">AI Configuration</span>
-                      <span class="feature-tag">Brand Voice</span>
-                      <span class="feature-tag">Quality Control</span>
-                    </div>
                     <div class="step-duration">Week 2</div>
                   </div>
                 </div>
@@ -1736,11 +1896,6 @@
                     <div class="step-number">03</div>
                     <h4 class="step-title">Launch & Training</h4>
                     <p class="step-description">Go live with your content engine and comprehensive team training for ongoing management.</p>
-                    <div class="step-features">
-                      <span class="feature-tag">System Deployment</span>
-                      <span class="feature-tag">Team Training</span>
-                      <span class="feature-tag">Documentation</span>
-                    </div>
                     <div class="step-duration">Week 3</div>
                   </div>
                 </div>
@@ -1756,11 +1911,6 @@
                     <div class="step-number">04</div>
                     <h4 class="step-title">Scale & Optimize</h4>
                     <p class="step-description">Monitor performance, refine the system, and scale your content production with confidence.</p>
-                    <div class="step-features">
-                      <span class="feature-tag">Performance Monitoring</span>
-                      <span class="feature-tag">System Optimization</span>
-                      <span class="feature-tag">Scaling Guidance</span>
-                    </div>
                     <div class="step-duration">Ongoing</div>
                   </div>
                 </div>
