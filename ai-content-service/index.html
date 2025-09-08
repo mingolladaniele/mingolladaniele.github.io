@@ -422,6 +422,82 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.5; }
     }
+
+    /* Problem Section Styles */
+    .problem-section {
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+      position: relative;
+    }
+    .problem-headline {
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: #1e293b;
+      line-height: 1.2;
+    }
+    .problem-subtitle {
+      font-size: 1.2rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .problem-cards {
+      margin-bottom: 4rem;
+    }
+    .problem-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    .problem-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+    .problem-icon {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+    .problem-card h4 {
+      color: #1e293b;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+    .problem-card p {
+      color: #64748b;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .problem-stats {
+      background: rgba(239, 68, 68, 0.05);
+      border-radius: 16px;
+      padding: 2.5rem 1.5rem;
+      border: 1px solid rgba(239, 68, 68, 0.1);
+    }
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ef4444;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .stat-label {
+      color: #64748b;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    @media (max-width: 768px) {
+      .problem-stats .col-md-3 {
+        margin-bottom: 2rem;
+      }
+      .problem-stats .col-md-3:last-child {
+        margin-bottom: 0;
+      }
+    }
   </style>
   <script defer src="https://omniscient-beluga.pikapod.net/script.js" data-website-id="752c2c45-13d8-49e9-8aa6-67982c5c1369"></script>
   <script type="application/ld+json">
@@ -479,12 +555,75 @@
 
   <main>
     <!-- Section 2: Problem -->
-    <section class="section-pad bg-light">
+    <section class="section-pad problem-section">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2 class="mb-3 readable">Publishing quality content is relentless. Your team's time is not.</h2>
-            <p class="fs-5 readable">Content agencies are expensive, in-house writing is slow, and maintaining the cadence required to see real SEO results is difficult. The result is stalled growth, missed rankings, and teams stretched thin by constant production pressure.</p>
+          <div class="col-lg-10">
+            <div class="text-center mb-5">
+              <h2 class="problem-headline mb-4">Publishing quality content is relentless.<br><span class="text-danger">Your team's time is not.</span></h2>
+              <p class="problem-subtitle">The content marketing struggle is real - and it's costing you growth</p>
+            </div>
+            
+            <div class="row g-4 problem-cards">
+              <div class="col-md-4">
+                <div class="problem-card">
+                  <div class="problem-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M12 6v6l4 2"/>
+                    </svg>
+                  </div>
+                  <h4>Time Intensive</h4>
+                  <p>Quality content takes 8-12 hours per article. Your team can't keep up with the pace needed for SEO success.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="problem-card">
+                  <div class="problem-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                      <path d="M2 17l10 5 10-5"/>
+                      <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                  </div>
+                  <h4>Expensive Agencies</h4>
+                  <p>Content agencies charge $500-2000+ per article, quickly burning through marketing budgets with mixed results.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="problem-card">
+                  <div class="problem-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                      <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/>
+                      <path d="M13 13l6 6"/>
+                    </svg>
+                  </div>
+                  <h4>Missed Rankings</h4>
+                  <p>Inconsistent publishing leads to stalled growth, missed keyword opportunities, and competitors taking your traffic.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="problem-stats">
+              <div class="row text-center">
+                <div class="col-md-3">
+                  <div class="stat-number">73%</div>
+                  <div class="stat-label">of marketers struggle with content consistency</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="stat-number">8-12hrs</div>
+                  <div class="stat-label">average time per quality article</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="stat-number">$1,500</div>
+                  <div class="stat-label">average agency cost per post</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="stat-number">6 months</div>
+                  <div class="stat-label">to see SEO results without consistency</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
