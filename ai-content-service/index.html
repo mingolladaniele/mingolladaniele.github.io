@@ -957,6 +957,40 @@
       font-weight: 700;
       margin: 0 auto 1.5rem;
     }
+
+    /* Simple FAQ Section */
+    .accordion-button {
+      background: #f8fafc;
+      border: none;
+      color: #1e293b;
+      font-weight: 600;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.1rem;
+    }
+    .accordion-button:not(.collapsed) {
+      background: linear-gradient(135deg, #3b82f6, #1e40af);
+      color: white;
+      box-shadow: none;
+    }
+    .accordion-button:focus {
+      box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.25);
+      border-color: #3b82f6;
+    }
+    .accordion-item {
+      border: 1px solid #e2e8f0;
+      margin-bottom: 0.5rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .accordion-item:first-of-type {
+      border-top: 1px solid #e2e8f0;
+    }
+    .accordion-body {
+      padding: 1.5rem;
+      background: #ffffff;
+      color: #64748b;
+      line-height: 1.6;
+    }
   </style>
   <script defer src="https://omniscient-beluga.pikapod.net/script.js" data-website-id="752c2c45-13d8-49e9-8aa6-67982c5c1369"></script>
   <script type="application/ld+json">
