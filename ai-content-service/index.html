@@ -91,9 +91,27 @@
     .video-placeholder { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(135deg, #1e40af, #2563eb); text-align: center; padding: 24px; cursor: pointer; }
     .video-placeholder .title { font-size: 1.25rem; font-weight: 700; }
     .video-placeholder .subtitle { opacity: 0.9; }
-    .benefit-list { max-width: 860px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6; }
-    .benefit-list li { display: flex; gap: .5rem; align-items: start; }
-    .benefit-list .check { color: #22c55e; }
+    .benefit-list { 
+      max-width: 600px; 
+      margin: 0 auto; 
+      font-size: 1.05rem; 
+      line-height: 1.6; 
+      text-align: left;
+      display: inline-block;
+    }
+    .benefit-list li { 
+      display: flex; 
+      gap: 0.75rem; 
+      align-items: flex-start; 
+      margin-bottom: 0.75rem;
+    }
+    .benefit-list .check { 
+      color: #22c55e; 
+      font-size: 1.1rem;
+      font-weight: 600;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
     .two-col { display: grid; grid-template-columns: 1fr; gap: 24px; }
     @media (min-width: 992px) { .two-col { grid-template-columns: 1fr 1fr; gap: 40px; } }
     .card .card-body { padding: 1.25rem 1.25rem; }
@@ -446,11 +464,13 @@
             <span class="tech-badge">SEO Optimized</span>
           </div>
           
-          <ul class="benefit-list list-unstyled text-start mt-4 mx-auto">
-            <li class="mb-2"><span class="check">✔</span><span>End-to-end: strategy, generation, on-page SEO, and publishing.</span></li>
-            <li class="mb-2"><span class="check">✔</span><span>Launch in ~2 weeks. Fits your brand voice and review flow.</span></li>
-            <li class="mb-0"><span class="check">✔</span><span>No long-term lock-in. You own the pipeline and content.</span></li>
-          </ul>
+          <div class="text-center mt-4">
+            <ul class="benefit-list list-unstyled">
+              <li><span class="check">✔</span><span>End-to-end: strategy, generation, on-page SEO, and publishing.</span></li>
+              <li><span class="check">✔</span><span>Launch in ~2 weeks. Fits your brand voice and review flow.</span></li>
+              <li><span class="check">✔</span><span>No long-term lock-in. You own the pipeline and content.</span></li>
+            </ul>
+          </div>
           <small class="d-block opacity-75 mt-3">
             <strong>Join 500+ content teams</strong> • No charge to explore fit • 15-minute virtual coffee
           </small>
