@@ -455,14 +455,14 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: #dcfce7;
-      color: #16a34a;
+      background: #dbeafe;
+      color: #1e40af;
       padding: 0.5rem 1rem;
       border-radius: 999px;
       font-size: 0.9rem;
       font-weight: 600;
       margin-bottom: 1.5rem;
-      border: 1px solid #bbf7d0;
+      border: 1px solid #bfdbfe;
     }
     .case-study-content h3 {
       font-size: 1.75rem;
@@ -547,6 +547,30 @@
     }
     .metric-change.positive {
       color: #10b981;
+    }
+    
+    /* Real Dashboard Styles */
+    .real-dashboard-container {
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      max-width: 600px;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+    .real-dashboard-container:hover {
+      transform: translateY(-12px) scale(1.03);
+    }
+    .real-dashboard-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .real-dashboard-container:hover .real-dashboard-img {
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      border-radius: 16px;
     }
     
     /* Enhanced Video Section */
@@ -1532,7 +1556,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-lg-8 text-center">
-            <h2 class="proof-headline mb-3">Don't just take my word for it. <br><span class="text-success">See the results for yourself.</span></h2>
+            <h2 class="proof-headline mb-3">Don't just take my word for it. <br><span class="text-primary">See the results for yourself.</span></h2>
             <p class="proof-subtitle">Real results from a live AI content system in action</p>
           </div>
         </div>
@@ -1543,35 +1567,16 @@
             <div class="col-lg-5">
               <div class="case-study-content">
                 <div class="case-study-badge">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
                     <path d="M9 12l2 2 4-4"/>
                     <circle cx="12" cy="12" r="9"/>
                   </svg>
                   <span>Live Case Study</span>
           </div>
-                <h3>Automated Blog Generating Real Traffic</h3>
-                <p>I built the exact system I'm offering to power my own blog. It runs 24/7, automatically publishing SEO-optimized content about the European tech job market.</p>
-                
-                <div class="results-grid">
-                  <div class="result-item">
-                    <div class="result-number">+847%</div>
-                    <div class="result-label">Organic Traffic Growth</div>
-            </div>
-                  <div class="result-item">
-                    <div class="result-number">127</div>
-                    <div class="result-label">Articles Published</div>
-                  </div>
-                  <div class="result-item">
-                    <div class="result-number">12/mo</div>
-                    <div class="result-label">Publishing Cadence</div>
-                  </div>
-                  <div class="result-item">
-                    <div class="result-number">2.3min</div>
-                    <div class="result-label">Avg. Read Time</div>
-          </div>
-        </div>
+                 <h3>Automated Blog Generating Real Traffic</h3>
+                 <p>I built the exact system I'm offering to power my own blog. It runs 24/7, automatically publishing SEO-optimized content about helping LATAM tech professionals find jobs in Europe. 0 paid ads, 100% organic growth.</p>
 
-                <a href="https://www.trabajostecnologicoseuropa.com/blog" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-lg mt-3" data-umami-event="Click - View Case Study">
+                <a href="https://www.trabajostecnologicoseuropa.com/blog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg mt-3" data-umami-event="Click - View Case Study">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                     <polyline points="15,3 21,3 21,9"/>
@@ -1582,59 +1587,7 @@
               </div>
             </div>
             <div class="col-lg-7">
-              <div class="dashboard-showcase">
-                <div class="dashboard-mockup enhanced">
-                  <div class="mockup-header">
-                    <div class="mockup-dots">
-                      <span></span><span></span><span></span>
-                    </div>
-                    <div class="mockup-title">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"/>
-                        <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/>
-                      </svg>
-                      AI Content Dashboard
-                    </div>
-                  </div>
-                  <div class="mockup-content">
-                    <div class="metric-row">
-                      <div class="metric">
-                        <div class="metric-label">Articles Published</div>
-                        <div class="metric-value">127</div>
-                        <div class="metric-change positive">+12 this month</div>
-                      </div>
-                      <div class="metric">
-                        <div class="metric-label">Organic Traffic</div>
-                        <div class="metric-value">24.7K</div>
-                        <div class="metric-change positive">+847% growth</div>
-                      </div>
-                    </div>
-                    <div class="pipeline-status">
-                      <div class="status-item">
-                        <span class="status-dot active"></span>
-                        <span>AI Pipeline Running</span>
-                      </div>
-                      <div class="status-item">
-                        <span class="status-dot pending"></span>
-                        <span>3 Articles in Review</span>
-                      </div>
-                    </div>
-                    <div class="traffic-chart">
-                      <div class="chart-header">
-                        <span>Traffic Growth (Last 6 Months)</span>
-                        <span class="chart-trend">↗ +847%</span>
-                      </div>
-                      <div class="chart-bars">
-                        <div class="bar" style="height: 20%"></div>
-                        <div class="bar" style="height: 35%"></div>
-                        <div class="bar" style="height: 45%"></div>
-                        <div class="bar" style="height: 60%"></div>
-                        <div class="bar" style="height: 85%"></div>
-                        <div class="bar" style="height: 100%"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <img src="img/google_search_dashboard.png" alt="Google Search Console Dashboard showing real organic traffic growth" class="real-dashboard-img">
               </div>
             </div>
           </div>
