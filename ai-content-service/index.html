@@ -655,35 +655,38 @@
       display: flex;
       justify-content: center;
     }
-    .problem-card h4 {
-      color: #1e293b;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-    }
-    .problem-card p {
-      color: #64748b;
-      line-height: 1.6;
-      margin: 0;
-    }
-    .problem-stats {
-      background: rgba(239, 68, 68, 0.05);
-      border-radius: 16px;
-      padding: 2.5rem 1.5rem;
-      border: 1px solid rgba(239, 68, 68, 0.1);
-    }
-    .stat-number {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #ef4444;
-      line-height: 1;
-      margin-bottom: 0.5rem;
-    }
-    .stat-label {
-      color: #64748b;
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
+     .problem-card h4 {
+       color: #1e293b;
+       font-weight: 600;
+       margin-bottom: 1rem;
+       font-size: 1.25rem;
+     }
+     .problem-card p {
+       color: #64748b;
+       line-height: 1.6;
+       margin: 0;
+     }
+     .problem-stats {
+       background: rgba(220, 38, 38, 0.05);
+       border-radius: 16px;
+       padding: 2.5rem 1.5rem;
+       border: 1px solid rgba(220, 38, 38, 0.1);
+     }
+     .stat-number {
+       font-size: 2.5rem;
+       font-weight: 800;
+       color: #dc2626;
+       line-height: 1;
+       margin-bottom: 0.5rem;
+     }
+     .stat-label {
+       color: #64748b;
+       font-size: 0.9rem;
+       font-weight: 500;
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+     }
     @media (max-width: 768px) {
       .problem-stats .col-md-3 {
         margin-bottom: 2rem;
@@ -1411,63 +1414,59 @@
             <div class="row g-4 problem-cards">
               <div class="col-md-4">
                 <div class="problem-card">
-                  <div class="problem-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <path d="M12 6v6l4 2"/>
-                    </svg>
-                  </div>
+                   <div class="problem-icon">
+                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2">
+                       <circle cx="12" cy="12" r="10"/>
+                       <path d="M12 6v6l4 2"/>
+                     </svg>
+                   </div>
                   <h4>Time Intensive</h4>
                   <p>Quality content takes 8-12 hours per article. Your team can't keep up with the pace needed for SEO success.</p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="problem-card">
-                  <div class="problem-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
-                      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                      <path d="M2 17l10 5 10-5"/>
-                      <path d="M2 12l10 5 10-5"/>
-                    </svg>
-                  </div>
+                   <div class="problem-icon">
+                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2">
+                       <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                       <path d="M2 17l10 5 10-5"/>
+                       <path d="M2 12l10 5 10-5"/>
+                     </svg>
+                   </div>
                   <h4>Expensive Agencies</h4>
                   <p>Content agencies charge $500-2000+ per article, quickly burning through marketing budgets with mixed results.</p>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="problem-card">
-                  <div class="problem-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
-                      <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/>
-                      <path d="M13 13l6 6"/>
-                    </svg>
-                  </div>
+                   <div class="problem-icon">
+                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2">
+                       <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/>
+                       <path d="M13 13l6 6"/>
+                     </svg>
+                   </div>
                   <h4>Missed Rankings</h4>
                   <p>Inconsistent publishing leads to stalled growth, missed keyword opportunities, and competitors taking your traffic.</p>
                 </div>
               </div>
             </div>
             
-            <div class="problem-stats">
-              <div class="row text-center">
-                <div class="col-md-3">
-                  <div class="stat-number">73%</div>
-                  <div class="stat-label">of marketers struggle with content consistency</div>
-                </div>
-                <div class="col-md-3">
-                  <div class="stat-number">8-12hrs</div>
-                  <div class="stat-label">average time per quality article</div>
-                </div>
-                <div class="col-md-3">
-                  <div class="stat-number">$1,500</div>
-                  <div class="stat-label">average agency cost per post</div>
-                </div>
-                <div class="col-md-3">
-                  <div class="stat-number">6 months</div>
-                  <div class="stat-label">to see SEO results without consistency</div>
-                </div>
-              </div>
-            </div>
+             <div class="problem-stats">
+               <div class="row text-center">
+                 <div class="col-md-4">
+                   <div class="stat-number">8-12hrs</div>
+                   <div class="stat-label">per quality article</div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="stat-number">$1,500</div>
+                   <div class="stat-label">agency cost per post</div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="stat-number">6 months</div>
+                   <div class="stat-label">to see SEO results</div>
+                 </div>
+               </div>
+             </div>
           </div>
         </div>
       </div>
