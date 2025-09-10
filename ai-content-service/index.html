@@ -391,6 +391,12 @@
       font-size: 0.9rem;
       font-weight: 500;
     }
+    .trust-item::before {
+      content: "✓";
+      color: #22c55e;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
     
     @media (max-width: 768px) {
       .founder-intro-simple {
@@ -1719,11 +1725,11 @@
     
     <div class="container" style="position: relative; z-index: 2;">
       <div class="row align-items-center">
-        <div class="col-lg-10 mx-auto text-center py-5">
-          <h1 class="display-2 mb-4">Stop Writing Content.<br>Start Growing <strong>Traffic</strong>.</h1>
+        <div class="col-lg-10 mx-auto text-center py-4">
+          <h1 class="display-2 mb-3">Stop Writing Content.<br>Start Growing <strong>Traffic</strong>.</h1>
           
           <!-- Simplified Personal Introduction -->
-          <div class="founder-intro-simple mb-4">
+          <div class="founder-intro-simple mb-3">
             <!-- The picture is a link to the home page -->
             <a href="https://danielemingolla.com" target="_blank" rel="noopener noreferrer">
               <img src="../assets/images/profile.png" alt="Daniele Mingolla" class="founder-photo-small">
@@ -1733,10 +1739,10 @@
             </p>
           </div>
           
-          <p class="value-proposition mb-4">Stop struggling with content.<br>Get 1,000+ monthly traffic on autopilot.</p>
+          <p class="value-proposition mb-3">Stop struggling with content.<br>Get 1,000+ monthly traffic on autopilot.</p>
           
           <!-- Simplified CTA -->
-          <div class="hero-cta-simple">
+          <div class="hero-cta-simple mb-3">
             <a href="https://calendar.app.google/4MhsYwwHE9BRcqzL8" target="_blank" rel="noopener noreferrer" class="btn btn-hero-simple" data-umami-event="Click - Book Call" aria-label="Get your free 30-day content roadmap on Google Calendar">
               Get Free 30-Day Roadmap
             </a>
@@ -1744,10 +1750,10 @@
           </div>
           
           <!-- Simplified Trust Indicators -->
-          <div class="trust-indicators-simple">
-            <span class="trust-item">✓ Senior AI Engineer at OpenNebula</span>
-            <span class="trust-item">✓ 30-day money-back guarantee</span>
-            <span class="trust-item">✓ You own everything</span>
+          <div class="trust-indicators-simple mb-3">
+            <span class="trust-item">Senior AI Engineer</span>
+            <span class="trust-item">30-day money-back guarantee</span>
+            <span class="trust-item">You own everything</span>
           </div>
       </div>
       </div>
