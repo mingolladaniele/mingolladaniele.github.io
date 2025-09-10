@@ -340,14 +340,30 @@
       bottom: 30px;
       left: 50%;
       transform: translateX(-50%);
-      color: rgba(255,255,255,.7);
+      color: white;
       text-align: center;
       animation: bounce 2s infinite;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      pointer-events: auto;
+      z-index: 10;
+      user-select: none;
+    }
+    .scroll-indicator:hover {
+      color: white;
+      transform: translateX(-50%) translateY(-3px) scale(1.05);
+      text-shadow: 0 0 10px rgba(255,255,255,0.5);
     }
     .scroll-indicator i {
       display: block;
       font-size: 1.5rem;
-      margin-top: 4px;
+      margin-top: 6px;
+      transition: all 0.3s ease;
+      color: white;
+    }
+    .scroll-indicator:hover i {
+      transform: translateY(3px) scale(1.1);
+      text-shadow: 0 0 10px rgba(255,255,255,0.5);
     }
     @keyframes bounce {
       0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
@@ -1461,15 +1477,15 @@
     </div>
     
     <!-- Scroll indicator -->
-    <div class="scroll-indicator">
-      <small>Scroll to learn more</small>
-      <i class="fas fa-chevron-down"></i>
+    <div class="scroll-indicator" id="scroll-indicator" style="cursor: pointer;">
+      <span style="font-size: 1.1rem; font-weight: 500; color: white;">Scroll to learn more</span>
+      <i class="fas fa-chevron-down" style="color: white;"></i>
     </div>
   </header>
 
   <main>
     <!-- Section 2: Problem -->
-    <section class="section-pad problem-section">
+    <section id="problem" class="section-pad problem-section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-10">
@@ -1915,6 +1931,21 @@
       {"@type":"Question","name":"What does the engagement look like week‑to‑week?","acceptedAnswer":{"@type":"Answer","text":"Week 1: strategy and setup. Week 2: build and first drafts. Ongoing: a steady cadence of 8–12 posts per month with your approvals."}}
     ]
   }
+  </script>
+
+  <!-- Scroll indicator click handler -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollIndicator = document.getElementById('scroll-indicator');
+      if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', function() {
+          const problemSection = document.getElementById('problem');
+          if (problemSection) {
+            problemSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+    });
   </script>
 </body>
 
