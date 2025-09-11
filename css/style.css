@@ -314,7 +314,7 @@ body {
     transform: translateY(-5px);
 }
 
-#skills .card-title {
+.card-title {
     font-size: 1.25rem;
     color: var(--primary-color);
     border-bottom: 2px solid rgba(74, 144, 226, 0.1);
@@ -1306,17 +1306,6 @@ body {
 .card-title {
     position: relative;
     padding-bottom: 0.75rem;
-}
-
-.card-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: var(--primary-color);
-    border-radius: 2px;
 }
 
 @media (max-width: 768px) {
