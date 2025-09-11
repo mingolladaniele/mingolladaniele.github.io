@@ -42,12 +42,58 @@ body {
     margin: 1rem 0;
 }
 
-/* Service Cards - Enhanced Bootstrap cards */
+/* Service Cards - Enhanced Bootstrap cards with auto-alignment */
+#services .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#services .col-md-6,
+#services .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Single service: center it */
+#services .row:has(.col-lg-4:only-child) {
+    justify-content: center;
+}
+
+#services .row:has(.col-lg-4:only-child) .col-lg-4 {
+    max-width: 400px;
+}
+
+/* Two services: side by side, centered */
+#services .row:has(.col-lg-4:nth-child(2):last-child) .col-lg-4 {
+    flex: 0 0 auto;
+    width: calc(50% - 1rem);
+    max-width: 400px;
+}
+
+/* Three services: three columns */
+#services .row:has(.col-lg-4:nth-child(3):last-child) .col-lg-4 {
+    flex: 0 0 auto;
+    width: calc(33.333% - 1rem);
+    max-width: 350px;
+}
+
+/* Mobile: stack all services vertically */
+@media (max-width: 768px) {
+    #services .row .col-lg-4 {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 1rem 0 !important;
+    }
+}
+
 .service-card {
     border: 1px solid rgba(37, 99, 235, 0.1);
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .service-card:hover {
