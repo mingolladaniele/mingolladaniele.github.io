@@ -326,6 +326,13 @@ body {
     .hero-section h1 {
         font-size: 2.5rem;
     }
+
+    /* Crisp text on mobile - avoid blur from compositing */
+    .hero-section .lead,
+    .hero-section .highlight-metric {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 }
 
 /* About Section */
@@ -1254,35 +1261,6 @@ body {
     display: none;
 }
 
-/* Open to Work Badge */
-.open-to-work-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(16, 185, 129, 0.2);
-    border: 1px solid rgba(16, 185, 129, 0.4);
-    color: #d1fae5;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    backdrop-filter: blur(4px);
-}
-
-.badge-dot {
-    width: 8px;
-    height: 8px;
-    background: #10b981;
-    border-radius: 50%;
-    display: inline-block;
-    animation: badgePulse 2s infinite;
-}
-
-@keyframes badgePulse {
-    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
-    50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
-}
-
 /* Contact Option Cards */
 .contact-option-card {
     background: white;
@@ -1495,24 +1473,14 @@ body {
     transform-origin: left;
 }
 
-/* Metric Highlight */
+/* Metric Highlight - no backdrop-filter or animation to avoid mobile blur */
 .highlight-metric {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
     font-weight: 500;
-    backdrop-filter: blur(4px);
-}
-
-/* Add a subtle animation for the metric */
-@keyframes metricPulse {
-    0% { background: rgba(255, 255, 255, 0.15); }
-    50% { background: rgba(255, 255, 255, 0.25); }
-    100% { background: rgba(255, 255, 255, 0.15); }
-}
-
-.highlight-metric {
-    animation: metricPulse 3s infinite;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .profile-image-container {
@@ -1596,5 +1564,141 @@ footer.footer .footer-social a:active {
     justify-content: center;
     gap: 2.5rem !important;
   }
+}
+
+/* About Section - Impact Metrics */
+.about-metric {
+    padding: 1.5rem 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(37, 99, 235, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-metric:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.about-metric-label {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+    font-weight: 500;
+}
+
+/* About Section - Career Path */
+.career-path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 2rem 0;
+}
+
+.career-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+    position: relative;
+}
+
+.career-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid #e5e7eb;
+}
+
+.career-step:hover .career-logo {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.career-step-current .career-logo {
+    background: linear-gradient(135deg, #3b82f6, #1e40af);
+    color: white;
+    border-color: #3b82f6;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.career-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+.career-role {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+.career-step-current .career-name {
+    color: var(--primary-color);
+}
+
+.career-connector {
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #e5e7eb, #d1d5db);
+    margin: 0 8px;
+    margin-bottom: 2rem;
+    flex-shrink: 0;
+}
+
+/* Mobile - Career Path */
+@media (max-width: 768px) {
+    .career-path {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+
+    .career-connector {
+        display: none;
+    }
+
+    .career-step {
+        min-width: unset;
+    }
+
+    .career-logo {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+}
+
+/* About Section links */
+#about a:not(.btn) {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+#about a:not(.btn):hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
   
