@@ -1,0 +1,56 @@
+[
+  {
+    "name": "taskMaster-todoist-mcp",
+    "description": "A lightweight Model Context Protocol (MCP) server that enables natural language interaction with your Todoist tasks directly from your IDE. Built with simplicity and maintainability in mind.",
+    "html_url": "https://github.com/mingolladaniele/taskMaster-todoist-mcp",
+    "stargazers_count": 42,
+    "forks_count": 6,
+    "language": "Python",
+    "topics": ["mcp", "todoist", "python"]
+  },
+  {
+    "name": "kindlegpt-notesenhancer",
+    "description": "A Python script that automates the extraction, enhancement, and storage of Kindle book notes in Obsidian via Google Drive, streamlining the note-taking process for Kindle users.",
+    "html_url": "https://github.com/mingolladaniele/kindlegpt-notesenhancer",
+    "stargazers_count": 15,
+    "forks_count": 2,
+    "language": "Python",
+    "topics": ["kindle", "obsidian", "python"]
+  },
+  {
+    "name": "weld-anomaly-detection",
+    "description": "A Welding Anomaly Detection system using unsupervised Machine Learning and statistical analysis to identify anomalies in welding process curves.",
+    "html_url": "https://github.com/mingolladaniele/weld-anomaly-detection",
+    "stargazers_count": 5,
+    "forks_count": 0,
+    "language": "Jupyter Notebook",
+    "topics": ["machine-learning", "anomaly-detection"]
+  },
+  {
+    "name": "Federated-Distributed-ML-Traffic-Prediction",
+    "description": "Implementation and evaluation of federated and distributed machine learning approaches for traffic prediction, including models, datasets, and results.",
+    "html_url": "https://github.com/mingolladaniele/Federated-Distributed-ML-Traffic-Prediction",
+    "stargazers_count": 1,
+    "forks_count": 0,
+    "language": "Python",
+    "topics": ["federated-learning", "traffic-prediction"]
+  },
+  {
+    "name": "ARTICLEES_WEBAPP_FLASK",
+    "description": "A web application where users can create a profile and write articles to share with other members of the community. Fully responsive interface with support for multiple databases.",
+    "html_url": "https://github.com/mingolladaniele/ARTICLEES_WEBAPP_FLASK",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "language": "Python",
+    "topics": ["flask", "web-app", "python"]
+  },
+  {
+    "name": "mingolladaniele.github.io",
+    "description": "Personal portfolio website built with Bootstrap, featuring dynamic GitHub project loading, contact form, and automated CI/CD via GitHub Actions.",
+    "html_url": "https://github.com/mingolladaniele/mingolladaniele.github.io",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "language": "HTML",
+    "topics": ["portfolio", "bootstrap", "github-pages"]
+  }
+]

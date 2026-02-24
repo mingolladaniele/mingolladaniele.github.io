@@ -558,13 +558,14 @@ body {
     
     .social-links {
         display: flex;
-        flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
     }
-    
+
     .social-links a {
-        width: 100%;
-        margin: 5px 0;
+        width: auto;
+        margin: 0;
     }
     
     .cta-buttons {
@@ -1568,9 +1569,9 @@ footer.footer .footer-social a:active {
 
 /* About Section - Impact Metrics */
 .about-metric {
-    padding: 1.5rem 1rem;
+    padding: 1rem 0.75rem;
     background: white;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     border: 1px solid rgba(37, 99, 235, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1582,16 +1583,16 @@ footer.footer .footer-social a:active {
 }
 
 .about-metric-value {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
     line-height: 1.2;
 }
 
 .about-metric-label {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #6b7280;
-    margin-top: 0.25rem;
+    margin-top: 0.2rem;
     font-weight: 500;
 }
 

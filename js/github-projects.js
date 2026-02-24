@@ -1,23 +1,16 @@
 class GitHubProjects {
-    constructor(username) {
-        this.username = username;
-        this.apiUrl = `https://api.github.com/users/${username}/repos`;
+    constructor() {
+        this.dataUrl = 'data/github-projects.json';
         this.projectsContainer = document.getElementById('github-projects');
     }
 
     async fetchProjects() {
         try {
-            const response = await fetch(this.apiUrl);
-            if (!response.ok) throw new Error('Failed to fetch projects');
-            const repos = await response.json();
-            
-            // Sort by stars and filter out forks and specific repo
-            return repos
-                .filter(repo => !repo.fork && repo.name !== 'mingolladaniele')
-                .sort((a, b) => b.stargazers_count - a.stargazers_count)
-                .slice(0, 6); // Display top 6 projects
+            const response = await fetch(this.dataUrl);
+            if (!response.ok) throw new Error('Failed to load projects data');
+            return await response.json();
         } catch (error) {
-            console.error('Error fetching projects:', error);
+            console.error('Error loading projects:', error);
             return [];
         }
     }
@@ -80,8 +73,7 @@ class GitHubProjects {
     }
 }
 
-// Initialize GitHub projects
 document.addEventListener('DOMContentLoaded', () => {
-    const githubProjects = new GitHubProjects('mingolladaniele');
+    const githubProjects = new GitHubProjects();
     githubProjects.init();
-}); 
+});

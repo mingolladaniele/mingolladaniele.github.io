@@ -1,0 +1,44 @@
+name: Update GitHub Projects
+
+on:
+  schedule:
+    - cron: '0 9 1,15 * *'  # 1st and 15th of each month at 09:00 UTC
+  workflow_dispatch:         # allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch repos from GitHub API
+        run: |
+          curl -s "https://api.github.com/users/mingolladaniele/repos?per_page=100" \
+            -H "Accept: application/vnd.github.mercy-preview+json" \
+          | jq '[
+              .[]
+              | select(.fork == false and .name != "mingolladaniele")
+              | {
+                  name,
+                  description,
+                  html_url,
+                  stargazers_count,
+                  forks_count,
+                  language,
+                  topics
+                }
+            ]
+            | sort_by(-.stargazers_count)
+            | .[0:6]' > data/github-projects.json
+
+      - name: Commit if changed
+        run: |
+          git diff --quiet data/github-projects.json && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/github-projects.json
+          git commit -m "chore: refresh GitHub projects data"
+          git push
