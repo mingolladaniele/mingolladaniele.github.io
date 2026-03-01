@@ -4,53 +4,73 @@
     "description": "A lightweight Model Context Protocol (MCP) server that enables natural language interaction with your Todoist tasks directly from your IDE. Built with simplicity and maintainability in mind.",
     "html_url": "https://github.com/mingolladaniele/taskMaster-todoist-mcp",
     "stargazers_count": 42,
-    "forks_count": 6,
+    "forks_count": 7,
     "language": "Python",
-    "topics": ["mcp", "todoist", "python"]
+    "topics": [
+      "ai-assistant",
+      "cursor-ai",
+      "mcp",
+      "todoist"
+    ]
   },
   {
     "name": "kindlegpt-notesenhancer",
     "description": "A Python script that automates the extraction, enhancement, and storage of Kindle book notes in Obsidian via Google Drive, streamlining the note-taking process for Kindle users.",
     "html_url": "https://github.com/mingolladaniele/kindlegpt-notesenhancer",
     "stargazers_count": 15,
-    "forks_count": 2,
+    "forks_count": 0,
     "language": "Python",
-    "topics": ["kindle", "obsidian", "python"]
+    "topics": [
+      "chatgpt-api",
+      "googleapi",
+      "obsidian-md",
+      "python"
+    ]
   },
   {
     "name": "weld-anomaly-detection",
     "description": "A Welding Anomaly Detection system using unsupervised Machine Learning and statistical analysis to identify anomalies in welding process curves.",
     "html_url": "https://github.com/mingolladaniele/weld-anomaly-detection",
-    "stargazers_count": 5,
+    "stargazers_count": 6,
     "forks_count": 0,
     "language": "Jupyter Notebook",
-    "topics": ["machine-learning", "anomaly-detection"]
+    "topics": [
+      "anomaly-detection",
+      "clustering-algorithm",
+      "machine-learning"
+    ]
   },
   {
     "name": "Federated-Distributed-ML-Traffic-Prediction",
-    "description": "Implementation and evaluation of federated and distributed machine learning approaches for traffic prediction, including models, datasets, and results.",
+    "description": "Implementation and evaluation of federated and distributed machine learning approaches for traffic prediction. This repository includes models, datasets, and results for assessing the effectiveness of these techniques in real-time traffic forecasting.",
     "html_url": "https://github.com/mingolladaniele/Federated-Distributed-ML-Traffic-Prediction",
     "stargazers_count": 1,
     "forks_count": 0,
-    "language": "Python",
-    "topics": ["federated-learning", "traffic-prediction"]
+    "language": null,
+    "topics": []
   },
   {
-    "name": "ARTICLEES_WEBAPP_FLASK",
-    "description": "A web application where users can create a profile and write articles to share with other members of the community. Fully responsive interface with support for multiple databases.",
-    "html_url": "https://github.com/mingolladaniele/ARTICLEES_WEBAPP_FLASK",
+    "name": "smart_chatbot_amazon_review",
+    "description": "A chatbot web app to analyze Amazon Fashion reviews that provides a natural and intuitive conversational experience, allowing users to explore customer reviews, identify trends, and understand what makes a great customer experience.",
+    "html_url": "https://github.com/mingolladaniele/smart_chatbot_amazon_review",
     "stargazers_count": 0,
     "forks_count": 0,
     "language": "Python",
-    "topics": ["flask", "web-app", "python"]
+    "topics": [
+      "artificial-intelligence",
+      "language-model",
+      "llm"
+    ]
   },
   {
-    "name": "mingolladaniele.github.io",
-    "description": "Personal portfolio website built with Bootstrap, featuring dynamic GitHub project loading, contact form, and automated CI/CD via GitHub Actions.",
-    "html_url": "https://github.com/mingolladaniele/mingolladaniele.github.io",
+    "name": "topic_modelling_users_feedbacks",
+    "description": "Analyzes streaming service user feedback using NLP clustering (BERT & NMF) to identify and prioritize common issues from customer reports.",
+    "html_url": "https://github.com/mingolladaniele/topic_modelling_users_feedbacks",
     "stargazers_count": 0,
     "forks_count": 0,
-    "language": "HTML",
-    "topics": ["portfolio", "bootstrap", "github-pages"]
+    "language": "Python",
+    "topics": [
+      "nlp"
+    ]
   }
 ]
