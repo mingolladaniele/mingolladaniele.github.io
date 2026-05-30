@@ -36,7 +36,7 @@ class GitHubProjects {
                         </div>
                         
                         <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <a href="${repo.html_url}" class="btn btn-view-project" target="_blank">
+                            <a href="${repo.html_url}" class="btn btn-view-project" target="_blank" rel="noopener noreferrer">
                                 <span class="btn-text">
                                     <i class="fab fa-github me-2"></i>View Project
                                 </span>

@@ -14,6 +14,8 @@ body {
     scroll-behavior: smooth;
 }
 
+.text-muted { color: #4b5563 !important; }
+
 /* Hero Section */
 .hero-section {
     min-height: 60vh;
@@ -1270,36 +1272,13 @@ body {
     }
 }
 
-/* Replace the podcast link styling with this more specific version */
-.hero-section .podcast-link {
-    color: white;
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 2px;
-    transition: all 0.3s ease;
+.hero-section .podcast-link,
+.hero-section .highlight-metric {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
-
-.hero-section .podcast-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: white;
-    left: 0;
-    bottom: -2px;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: right;
-}
-
-.hero-section .podcast-link:hover {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.hero-section .podcast-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
+.hero-section .podcast-link:hover { color: #e0e7ff; }
 
 /* Metric Highlight - no backdrop-filter or animation to avoid mobile blur */
 .highlight-metric {
