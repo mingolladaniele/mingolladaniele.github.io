@@ -1,0 +1,15 @@
+{
+  "name": "danielemingolla-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "audit:lighthouse": "node scripts/lighthouse-audit.mjs",
+    "audit:links": "npx linkinator https://danielemingolla.com --recurse --skip https://calendar.app.google",
+    "audit:grep-service": "node scripts/check-no-service-refs.mjs",
+    "audit:umami": "node scripts/check-umami-snippet.mjs"
+  },
+  "devDependencies": {
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^12.3.0"
+  }
+}
