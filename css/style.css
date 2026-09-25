@@ -97,6 +97,7 @@ body {
 }
 
 .site-name {
+  margin: 0;
   font-weight: 600;
   font-size: 1.125rem;
   letter-spacing: -0.02em;
@@ -194,7 +195,7 @@ a:focus-visible {
 
 @media (min-width: 30rem) {
   .work-list li {
-    grid-template-columns: 7rem minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     align-items: baseline;
   }
 }
@@ -218,18 +219,6 @@ a:focus-visible {
 
 .work-role {
   color: var(--color-ink-2);
-}
-
-.work-dates {
-  font-size: 0.875rem;
-  color: var(--color-ink-2);
-  font-variant-numeric: tabular-nums;
-}
-
-@media (min-width: 30rem) {
-  .work-dates {
-    text-align: right;
-  }
 }
 
 /* Projects (dynamic) */
