@@ -276,6 +276,47 @@ a:focus-visible {
   color: var(--color-ink-2);
 }
 
+/* Contact */
+.contact-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-rows > li {
+  display: block;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--color-rule);
+}
+
+.contact-rows > li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.contact-kind {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
+}
+
+@media (min-width: 34rem) {
+  .contact-rows > li {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: 0.2rem 1rem;
+    align-items: baseline;
+  }
+
+  .contact-kind {
+    margin-bottom: 0;
+  }
+}
+
 /* Footer */
 .site-footer {
   margin-top: var(--space-section);

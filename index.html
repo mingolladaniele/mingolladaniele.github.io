@@ -154,12 +154,27 @@
 
       <section id="contact" aria-labelledby="contact-heading">
         <h2 id="contact-heading">Contact</h2>
-        <ul class="list-plain">
-          <li><a href="mailto:daniele.mingolla.jobs@gmail.com" data-umami-event="contact_email">daniele.mingolla.jobs@gmail.com</a></li>
-          <li><a href="https://linkedin.com/in/daniele-mingolla" target="_blank" rel="noopener noreferrer"
-              data-umami-event="contact_linkedin" data-umami-event-source="contact">LinkedIn</a></li>
-          <li><a href="https://github.com/mingolladaniele" target="_blank" rel="noopener noreferrer"
-              data-umami-event="social_github" data-umami-event-source="contact">GitHub</a></li>
+        <ul class="contact-rows">
+          <li>
+            <span class="contact-kind">Email</span>
+            <a href="mailto:danielemingolla98ta@gmail.com"
+              data-umami-event="contact_email">danielemingolla98ta@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-kind">LinkedIn</span>
+            <a href="https://linkedin.com/in/daniele-mingolla" target="_blank" rel="noopener noreferrer"
+              data-umami-event="contact_linkedin" data-umami-event-source="contact">daniele-mingolla</a>
+          </li>
+          <li>
+            <span class="contact-kind">GitHub</span>
+            <a href="https://github.com/mingolladaniele" target="_blank" rel="noopener noreferrer"
+              data-umami-event="social_github" data-umami-event-source="contact">mingolladaniele</a>
+          </li>
+          <li>
+            <span class="contact-kind">One tap</span>
+            <a href="./assets/contact/daniele-mingolla.vcf" data-umami-event="vcard_save">Add my details to your
+              phone contacts</a>
+          </li>
         </ul>
       </section>
     </main>
@@ -181,6 +196,21 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    (() => {
+      const source = new URLSearchParams(location.search).get('src');
+      if (!source) return;
+      let attempts = 0;
+      const report = () => {
+        if (window.umami && window.umami.track) {
+          window.umami.track('qr_scan', { source });
+          return;
+        }
+        attempts += 1;
+        if (attempts < 20) setTimeout(report, 250);
+      };
+      report();
+    })();
   </script>
 </body>
 
