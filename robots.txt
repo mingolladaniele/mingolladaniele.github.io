@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /assets/contact/
 Disallow: /assets/cv/
 
 Sitemap: https://danielemingolla.com/sitemap.xml
