@@ -162,8 +162,6 @@ a:focus-visible {
 
 .intro-lead {
   margin: 0 0 1.25rem;
-  font-size: 1.1875rem;
-  line-height: 1.5;
 }
 
 /* Lists */
@@ -174,14 +172,16 @@ a:focus-visible {
 }
 
 .list-plain > li {
+  position: relative;
   margin-bottom: 0.65rem;
-  padding-left: 0;
+  padding-left: 1rem;
   color: var(--color-ink);
 }
 
 .list-plain > li::before {
   content: "•";
-  margin-right: 0.5rem;
+  position: absolute;
+  left: 0;
   color: var(--color-ink-2);
 }
 
