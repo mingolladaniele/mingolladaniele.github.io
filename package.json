@@ -4,9 +4,7 @@
   "type": "module",
   "scripts": {
     "audit:lighthouse": "node scripts/lighthouse-audit.mjs",
-    "audit:links": "npx linkinator https://danielemingolla.com --recurse --skip https://calendar.app.google",
-    "audit:grep-service": "node scripts/check-no-service-refs.mjs",
-    "audit:umami": "node scripts/check-umami-snippet.mjs"
+    "audit:links": "npx linkinator https://danielemingolla.com --recurse --skip https://calendar.app.google"
   },
   "devDependencies": {
     "chrome-launcher": "^1.1.2",
