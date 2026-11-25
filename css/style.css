@@ -160,6 +160,12 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+.intro-lead {
+  margin: 0 0 1.25rem;
+  font-size: 1.1875rem;
+  line-height: 1.5;
+}
+
 /* Lists */
 .list-plain {
   margin: 0;
@@ -249,33 +255,6 @@ a:focus-visible {
   font-size: 0.8125rem;
 }
 
-/* How I work */
-.approach-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.approach-list > li + li {
-  margin-top: 1.15rem;
-}
-
-.approach-lead {
-  display: block;
-  font-weight: 600;
-  font-size: 0.9375rem;
-  letter-spacing: -0.01em;
-  color: var(--color-ink);
-}
-
-.approach-detail {
-  display: block;
-  margin-top: 0.25rem;
-  font-size: 0.9375rem;
-  line-height: 1.55;
-  color: var(--color-ink-2);
-}
-
 /* Contact */
 .contact-rows {
   margin: 0;
@@ -349,20 +328,9 @@ a:focus-visible {
   color: var(--color-ink-2);
 }
 
-.empty-note {
-  color: var(--color-ink-2);
-  font-size: 0.9375rem;
-}
-
 .projects-more {
   margin: 1.25rem 0 0;
   font-size: 0.9375rem;
-}
-
-.section-note {
-  margin: -0.75rem 0 1.25rem;
-  font-size: 0.9375rem;
-  color: var(--color-ink-2);
 }
 
 .projects-more a {
